@@ -1,0 +1,1864 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+  <link rel="stylesheet" href="Sybase.pm_files/style.css" type="text/css">
+<style>
+.styleswitch {
+  text-align: right;
+}
+</style>
+
+
+<script type="text/javascript" src="Sybase.pm_files/jquery_002.js"></script>
+<script type="text/javascript" src="Sybase.pm_files/jquery_003.js"></script>
+<script type="text/javascript" src="Sybase.pm_files/sh_main.js"></script>
+<script type="text/javascript" src="Sybase.pm_files/sh_perl.js"></script>
+<script type="text/javascript" src="Sybase.pm_files/jquery.js"></script>
+
+<link rel="stylesheet" href="Sybase.pm_files/print.css" type="text/css" media="print">
+  <link rel="alternate" type="application/rss+xml" title="RSS 1.0" href="http://search.cpan.org/uploads.rdf">
+  <link rel="search" href="http://st.pimg.net/tucs/opensearch.xml" type="application/opensearchdescription+xml" title="SearchCPAN">
+  <title>DBD::Sybase - search.cpan.org</title>
+ <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3528438-1']);
+    _gaq.push(["_setCustomVar",2,"Distribution","DBD-Sybase",3]);
+    _gaq.push(["_setCustomVar",5,"Release","DBD-Sybase-1.14",3]);
+    _gaq.push(["_setCustomVar",3,"Module","DBD::Sybase",3]);
+    _gaq.push(["_setCustomVar",1,"Author","MEWP",3]);
+    _gaq.push(['_trackPageview']);
+  </script>
+ <link rel="stylesheet" type="text/css" href="Sybase.pm_files/sh_none.css" id="theme0.6164293508745914"></head>
+ <body id="cpansearch">
+<center><div class="logo"><a href="http://search.cpan.org/"><img src="Sybase.pm_files/cpan_banner.png" alt="CPAN"></a></div></center>
+<div class="menubar">
+ <a href="http://search.cpan.org/">Home</a>
+· <a href="http://search.cpan.org/author/">Authors</a>
+· <a href="http://search.cpan.org/recent">Recent</a>
+· <a href="http://log.perl.org/cpansearch/">News</a>
+· <a href="http://search.cpan.org/mirror">Mirrors</a>
+· <a href="http://search.cpan.org/faq.html">FAQ</a>
+· <a href="http://search.cpan.org/feedback">Feedback</a>
+</div>
+<form method="get" action="/search" name="f" class="searchbox">
+<input name="query" size="35" type="text">
+<br>in <select name="mode">
+ <option selected="selected" value="all">All</option>
+ <option value="module">Modules</option>
+ <option value="dist">Distributions</option>
+ <option value="author">Authors</option>
+</select>&nbsp;<input value="CPAN Search" type="submit">
+</form>
+
+
+ <a name="_top"></a>
+  <div class="path">
+<div id="permalink" class="noprint"><a href="http://search.cpan.org/perldoc?DBD%3A%3ASybase">permalink</a></div>
+  <a href="http://search.cpan.org/%7Emewp/">Michael Peppler</a> &gt;
+  <a href="http://search.cpan.org/%7Emewp/DBD-Sybase-1.14/">DBD-Sybase-1.14</a> &gt;
+  DBD::Sybase
+ </div>
+
+<div class="noprint" style="float:right;align:left;width:19ex">
+<a href="http://hexten.net/cpan-faces/"><img src="Sybase.pm_files/21f7c30c9f01a5b2dd6a1528ae852f29.png" style="float: right;" height="80" width="80"></a>
+<br style="clear:both">
+<p style="text-align:right">Download:<br> <a href="http://search.cpan.org/CPAN/authors/id/M/ME/MEWP/DBD-Sybase-1.14.tar.gz">DBD-Sybase-1.14.tar.gz</a></p>
+<p style="text-align:right"><a href="http://deps.cpantesters.org/?module=DBD%3A%3ASybase;perl=latest">Dependencies</a></p>
+<p style="text-align:right"><a href="http://www.annocpan.org/%7EMEWP/DBD-Sybase-1.14/Sybase.pm">Annotate this POD
+</a></p>
+<div class="box" style="width:150px; float: right">
+<h1 class="t5">Related Modules</h1>
+<div style="margin:2px">
+<a href="http://search.cpan.org/perldoc?DBD%3A%3AODBC">DBD::ODBC</a><br>
+<a href="http://search.cpan.org/perldoc?Class%3A%3ADBI">Class::DBI</a><br>
+<a href="http://search.cpan.org/perldoc?DBD%3A%3AOracle">DBD::Oracle</a><br>
+<a href="http://search.cpan.org/perldoc?DBD%3A%3Amysql">DBD::mysql</a><br>
+<a href="http://search.cpan.org/perldoc?Sybase%3A%3ACTlib">Sybase::CTlib</a><br>
+<a href="http://search.cpan.org/perldoc?DBIx%3A%3ARecordset">DBIx::Recordset</a><br>
+<a href="http://search.cpan.org/perldoc?HTML%3A%3ATemplate">HTML::Template</a><br>
+<a href="http://search.cpan.org/perldoc?Sybase%3A%3ADBlib">Sybase::DBlib</a><br>
+<a href="http://search.cpan.org/perldoc?Data%3A%3ADumper">Data::Dumper</a><br>
+<a href="http://search.cpan.org/perldoc?Win32%3A%3AOLE">Win32::OLE</a><br>
+<small>
+<a href="http://perlmonks.org/?node=cpan+module+search&amp;pivot=1&amp;module=DBD%3A%3ASybase">more...</a><br>
+By <a href="http://perlmonks.org/">perlmonks.org</a></small>
+</div>
+</div>
+
+<div style="float:right">
+<div class="box" style="width:150px">
+<h1 class="t5">CPAN RT</h1>
+<div style="margin:2px">
+<table style="margin-left: auto; margin-right: auto;">
+<tbody><tr><td>New&nbsp;</td><td style="text-align: right;"> 21</td></tr>
+<tr><td>Open&nbsp;</td><td style="text-align: right;"> 6</td></tr>
+</tbody></table>
+<a href="https://rt.cpan.org/Public/Dist/Display.html?Name=DBD-Sybase">View/Report Bugs</a><br>
+</div>
+</div>
+
+</div>
+</div>
+  Module Version:  1.14 &nbsp;
+<span class="noprint">
+  <a href="http://search.cpan.org/src/MEWP/DBD-Sybase-1.14/Sybase.pm">Source</a> &nbsp;
+</span>
+<a name="___top"></a>
+<div class="pod">
+<div class="toc">
+<div class="indexgroup">
+<ul class="indexList indexList1">
+  <li class="indexItem indexItem1"><a href="#NAME">NAME</a>
+  </li><li class="indexItem indexItem1"><a href="#SYNOPSIS">SYNOPSIS</a>
+  </li><li class="indexItem indexItem1"><a href="#DESCRIPTION">DESCRIPTION</a>
+  </li><li class="indexItem indexItem1"><a href="#Connecting_to_Sybase">Connecting to Sybase</a>
+  <ul class="indexList indexList2">
+    <li class="indexItem indexItem2"><a href="#The_interfaces_file">The interfaces file</a>
+    </li><li class="indexItem indexItem2"><a href="#Specifying_the_server_name">Specifying the server name</a>
+    </li><li class="indexItem indexItem2"><a href="#Specifying_other_connection_specific_parameters">Specifying other connection specific parameters</a>
+  </li></ul>
+  </li><li class="indexItem indexItem1"><a href="#Handling_Multiple_Result_Sets">Handling Multiple Result Sets</a>
+  </li><li class="indexItem indexItem1"><a href="#$sth-%3Eexecute%28%29_failure_mode_behavior">$sth-&gt;execute() failure mode behavior</a>
+  </li><li class="indexItem indexItem1"><a href="#Sybase_Specific_Attributes">Sybase Specific Attributes</a>
+  <ul class="indexList indexList2">
+    <li class="indexItem indexItem2"><a href="#Database_Handle_Attributes">Database Handle Attributes</a>
+    </li><li class="indexItem indexItem2"><a href="#Statement_Handle_Attributes">Statement Handle Attributes</a>
+  </li></ul>
+  </li><li class="indexItem indexItem1"><a href="#Controlling_DATETIME_output_formats">Controlling DATETIME output formats</a>
+  </li><li class="indexItem indexItem1"><a href="#Retrieving_OUTPUT_parameters_from_stored_procedures">Retrieving OUTPUT parameters from stored procedures</a>
+  </li><li class="indexItem indexItem1"><a href="#Multiple_active_statements_on_one_$dbh">Multiple active statements on one $dbh</a>
+  </li><li class="indexItem indexItem1"><a href="#Working_with_IMAGE_and_TEXT_columns">Working with IMAGE and TEXT columns</a>
+  <ul class="indexList indexList2">
+    <li class="indexItem indexItem2"><a href="#Handling_IMAGE/TEXT_data_with_syb_ct_get_data%28%29/syb_ct_send_data%28%29">Handling IMAGE/TEXT data with syb_ct_get_data()/syb_ct_send_data()</a>
+  </li></ul>
+  </li><li class="indexItem indexItem1"><a href="#AutoCommit,_Transactions_and_Transact-SQL">AutoCommit, Transactions and Transact-SQL</a>
+  </li><li class="indexItem indexItem1"><a href="#Behavior_of_$dbh-%3Elast_insert_id">Behavior of $dbh-&gt;last_insert_id</a>
+  </li><li class="indexItem indexItem1"><a href="#Using_?_Placeholders_&amp;_bind_parameters_to_$sth-%3Eexecute">Using ? Placeholders &amp; bind parameters to $sth-&gt;execute</a>
+  </li><li class="indexItem indexItem1"><a href="#Calling_Stored_Procedures">Calling Stored Procedures</a>
+  <ul class="indexList indexList2">
+    <li class="indexItem indexItem2"><a href="#Stored_Procedures_and_Placeholders">Stored Procedures and Placeholders</a>
+  </li></ul>
+  </li><li class="indexItem indexItem1"><a href="#Other_Private_Methods">Other Private Methods</a>
+  <ul class="indexList indexList2">
+    <li class="indexItem indexItem2"><a href="#DBD::Sybase_private_Database_Handle_Methods">DBD::Sybase private Database Handle Methods</a>
+    </li><li class="indexItem indexItem2"><a href="#DBD::Sybase_private_Statement_Handle_Methods">DBD::Sybase private Statement Handle Methods</a>
+  </li></ul>
+  </li><li class="indexItem indexItem1"><a href="#Experimental_Bulk-Load_Functionality">Experimental Bulk-Load Functionality</a>
+  </li><li class="indexItem indexItem1"><a href="#Using_DBD::Sybase_with_MS-SQL">Using DBD::Sybase with MS-SQL</a>
+  </li><li class="indexItem indexItem1"><a href="#nsql">nsql</a>
+  </li><li class="indexItem indexItem1"><a href="#Multi-Threading">Multi-Threading</a>
+  </li><li class="indexItem indexItem1"><a href="#BUGS">BUGS</a>
+  </li><li class="indexItem indexItem1"><a href="#SEE_ALSO">SEE ALSO</a>
+  </li><li class="indexItem indexItem1"><a href="#AUTHOR">AUTHOR</a>
+  </li><li class="indexItem indexItem1"><a href="#COPYRIGHT">COPYRIGHT</a>
+  </li><li class="indexItem indexItem1"><a href="#ACKNOWLEDGEMENTS">ACKNOWLEDGEMENTS</a>
+</li></ul>
+</div>
+</div>
+
+<h1><a class="u" href="#___top" title="click to go to top of document" name="NAME">NAME <img alt="^" src="Sybase.pm_files/up.gif"></a></h1>
+
+<p>DBD::Sybase - Sybase database driver for the DBI module</p>
+
+<h1><a class="u" href="#___top" title="click to go to top of document" name="SYNOPSIS">SYNOPSIS <img alt="^" src="Sybase.pm_files/up.gif"></a></h1>
+
+<pre class="sh_perl sh_sourceCode">    <span class="sh_keyword">use</span> DBI<span class="sh_symbol">;</span>
+
+    <span class="sh_variable">$dbh</span> <span class="sh_symbol">=</span> DBI<span class="sh_symbol">-&gt;</span><span class="sh_function">connect</span><span class="sh_symbol">(</span><span class="sh_string">"dbi:Sybase:"</span><span class="sh_symbol">,</span> <span class="sh_variable">$user</span><span class="sh_symbol">,</span> <span class="sh_variable">$passwd</span><span class="sh_symbol">);</span>
+
+    <span class="sh_comment"># See the DBI module documentation for full details</span></pre>
+
+<h1><a class="u" href="#___top" title="click to go to top of document" name="DESCRIPTION">DESCRIPTION <img alt="^" src="Sybase.pm_files/up.gif"></a></h1>
+
+<p>DBD::Sybase is a Perl module which works with the DBI module to provide access to Sybase databases.</p>
+
+<h1><a class="u" href="#___top" title="click to go to top of document" name="Connecting_to_Sybase">Connecting to Sybase <img alt="^" src="Sybase.pm_files/up.gif"></a></h1>
+
+<h2><a class="u" href="#___top" title="click to go to top of document" name="The_interfaces_file">The interfaces file</a></h2>
+
+<p>The DBD::Sybase module is built on top of the Sybase <i>Open Client Client Library</i> API. This library makes use of the Sybase <i>interfaces</i> file (<i>sql.ini</i>
+ on Win32 machines) to make a link between a logical server name (e.g. 
+SYBASE) and the physical machine / port number that the server is 
+running on. The OpenClient library uses the environment variable <b>SYBASE</b> to find the location of the <i>interfaces</i> file, as well as other files that it needs (such as locale files). The <b>SYBASE</b> environment is the path to the Sybase installation (eg '/usr/local/sybase'). If you need to set it in your scripts, then you <i>must</i> set it in a <code>BEGIN{}</code> block:</p>
+
+<pre class="sh_perl sh_sourceCode">   BEGIN <span class="sh_cbracket">{</span>
+       <span class="sh_variable">$ENV</span><span class="sh_cbracket">{</span>SYBASE<span class="sh_cbracket">}</span> <span class="sh_symbol">=</span> <span class="sh_string">'/opt/sybase/11.0.2'</span><span class="sh_symbol">;</span>
+   <span class="sh_cbracket">}</span>
+
+   <span class="sh_keyword">my</span> <span class="sh_variable">$dbh</span> <span class="sh_symbol">=</span> DBI<span class="sh_symbol">-&gt;</span><span class="sh_function">connect</span><span class="sh_symbol">(</span><span class="sh_string">'dbi:Sybase:'</span><span class="sh_symbol">,</span> <span class="sh_variable">$user</span><span class="sh_symbol">,</span> <span class="sh_variable">$passwd</span><span class="sh_symbol">);</span></pre>
+
+<h2><a class="u" href="#___top" title="click to go to top of document" name="Specifying_the_server_name">Specifying the server name</a></h2>
+
+<p>The server that DBD::Sybase connects to defaults to <i>SYBASE</i>, but can be specified in two ways.</p>
+
+<p>You can set the <i>DSQUERY</i> environement variable:</p>
+
+<pre class="sh_perl sh_sourceCode">    <span class="sh_variable">$ENV</span><span class="sh_cbracket">{</span>DSQUERY<span class="sh_cbracket">}</span> <span class="sh_symbol">=</span> <span class="sh_string">"ENGINEERING"</span><span class="sh_symbol">;</span>
+    <span class="sh_variable">$dbh</span> <span class="sh_symbol">=</span> DBI<span class="sh_symbol">-&gt;</span><span class="sh_function">connect</span><span class="sh_symbol">(</span><span class="sh_string">'dbi:Sybase:'</span><span class="sh_symbol">,</span> <span class="sh_variable">$user</span><span class="sh_symbol">,</span> <span class="sh_variable">$passwd</span><span class="sh_symbol">);</span></pre>
+
+<p>Or you can pass the server name in the first argument to connect():</p>
+
+<pre class="sh_perl sh_sourceCode">    <span class="sh_variable">$dbh</span> <span class="sh_symbol">=</span> DBI<span class="sh_symbol">-&gt;</span><span class="sh_function">connect</span><span class="sh_symbol">(</span><span class="sh_string">"dbi:Sybase:server=ENGINEERING"</span><span class="sh_symbol">,</span> <span class="sh_variable">$user</span><span class="sh_symbol">,</span> <span class="sh_variable">$passwd</span><span class="sh_symbol">);</span></pre>
+
+<h2><a class="u" href="#___top" title="click to go to top of document" name="Specifying_other_connection_specific_parameters">Specifying other connection specific parameters</a></h2>
+
+<p>It is sometimes necessary (or beneficial) to specify other connection properties. Currently the following are supported:</p>
+
+<dl>
+<dt><a name="server">server</a></dt>
+
+<dd>
+<p>Specify the server that we should connect to.</p>
+
+<pre class="sh_perl sh_sourceCode">     <span class="sh_variable">$dbh</span> <span class="sh_symbol">=</span> DBI<span class="sh_symbol">-&gt;</span><span class="sh_function">connect</span><span class="sh_symbol">(</span><span class="sh_string">"dbi:Sybase:server=BILLING"</span><span class="sh_symbol">,</span>
+                         <span class="sh_variable">$user</span><span class="sh_symbol">,</span> <span class="sh_variable">$passwd</span><span class="sh_symbol">);</span></pre>
+
+<p>The default server is <i>SYBASE</i>, or the value of the <i>$DSQUERY</i> environment variable, if it is set.</p>
+
+</dd><dt><a name="host">host</a></dt>
+
+<dd>
+</dd><dt><a name="port">port</a></dt>
+
+<dd>
+<p>If you built DBD::Sybase with OpenClient 12.5.1 or later, then you can use the <i>host</i> and <i>port</i>
+ values to define the server you want to connect to. This will by-pass 
+the server name lookup in the interfaces file. This is useful in the 
+case where the server hasn't been entered in the interfaces file.</p>
+
+<pre class="sh_perl sh_sourceCode">     <span class="sh_variable">$dbh</span> <span class="sh_symbol">=</span> DBI<span class="sh_symbol">-&gt;</span><span class="sh_function">connect</span><span class="sh_symbol">(</span><span class="sh_string">"dbi:Sybase:host=db1.domain.com;port=4100"</span><span class="sh_symbol">,</span>
+                         <span class="sh_variable">$user</span><span class="sh_symbol">,</span> <span class="sh_variable">$passwd</span><span class="sh_symbol">);</span></pre>
+
+</dd><dt><a name="maxConnect">maxConnect</a></dt>
+
+<dd>
+<p>By default DBD::Sybase (and the underlying OpenClient libraries) is 
+limited to openening 25 simultaneous connections to one or more database
+ servers. If you need more than 25 connections at the same time, you can
+ use the <i>maxConnect</i> option to increase this number.</p>
+
+<pre class="sh_perl sh_sourceCode">     <span class="sh_variable">$dbh</span> <span class="sh_symbol">=</span> DBI<span class="sh_symbol">-&gt;</span><span class="sh_function">connect</span><span class="sh_symbol">(</span><span class="sh_string">"dbi:Sybase:maxConnect=100"</span><span class="sh_symbol">,</span>
+                         <span class="sh_variable">$user</span><span class="sh_symbol">,</span> <span class="sh_variable">$passwd</span><span class="sh_symbol">);</span></pre>
+
+</dd><dt><a name="database">database</a></dt>
+
+<dd>
+<p>Specify the database that should be made the default database.</p>
+
+<pre class="sh_perl sh_sourceCode">     <span class="sh_variable">$dbh</span> <span class="sh_symbol">=</span> DBI<span class="sh_symbol">-&gt;</span><span class="sh_function">connect</span><span class="sh_symbol">(</span><span class="sh_string">"dbi:Sybase:database=sybsystemprocs"</span><span class="sh_symbol">,</span>
+                         <span class="sh_variable">$user</span><span class="sh_symbol">,</span> <span class="sh_variable">$passwd</span><span class="sh_symbol">);</span></pre>
+
+<p>This is equivalent to</p>
+
+<pre class="sh_perl sh_sourceCode">    <span class="sh_variable">$dbh</span> <span class="sh_symbol">=</span> DBI<span class="sh_symbol">-&gt;</span><span class="sh_function">connect</span><span class="sh_symbol">(</span><span class="sh_string">'dbi:Sybase:'</span><span class="sh_symbol">,</span> <span class="sh_variable">$user</span><span class="sh_symbol">,</span> <span class="sh_variable">$passwd</span><span class="sh_symbol">);</span>
+    <span class="sh_variable">$dbh</span><span class="sh_symbol">-&gt;</span><span class="sh_keyword">do</span><span class="sh_symbol">(</span><span class="sh_string">"use sybsystemprocs"</span><span class="sh_symbol">);</span></pre>
+
+</dd><dt><a name="charset">charset</a></dt>
+
+<dd>
+<p>Specify the character set that the client uses.</p>
+
+<pre class="sh_perl sh_sourceCode">     <span class="sh_variable">$dbh</span> <span class="sh_symbol">=</span> DBI<span class="sh_symbol">-&gt;</span><span class="sh_function">connect</span><span class="sh_symbol">(</span><span class="sh_string">"dbi:Sybase:charset=iso_1"</span><span class="sh_symbol">,</span>
+                         <span class="sh_variable">$user</span><span class="sh_symbol">,</span> <span class="sh_variable">$passwd</span><span class="sh_symbol">);</span></pre>
+
+<p>The default charset used depends on the locale that the application 
+runs in. If you wish to interact with unicode varaiables (see 
+syb_enable_utf8, below) then you should set charset=utf8. Note however 
+that this means that Sybase will expect all data sent to it for 
+char/varchar columns to be encoded in utf8 (e.g. sending iso8859-1 
+characters like e-grave, etc).</p>
+
+</dd><dt><a name="language">language</a></dt>
+
+<dd>
+<p>Specify the language that the client uses.</p>
+
+<pre class="sh_perl sh_sourceCode">     <span class="sh_variable">$dbh</span> <span class="sh_symbol">=</span> DBI<span class="sh_symbol">-&gt;</span><span class="sh_function">connect</span><span class="sh_symbol">(</span><span class="sh_string">"dbi:Sybase:language=us_english"</span><span class="sh_symbol">,</span>
+                         <span class="sh_variable">$user</span><span class="sh_symbol">,</span> <span class="sh_variable">$passwd</span><span class="sh_symbol">);</span></pre>
+
+<p>Note that the language has to have been installed on the server (via 
+langinstall or sp_addlanguage) for this to work. If the language is not 
+installed the session will default to the default language of the 
+server.</p>
+
+</dd><dt><a name="packetSize">packetSize</a></dt>
+
+<dd>
+<p>Specify the network packet size that the connection should use. Using
+ a larger packet size can increase performance for certain types of 
+queries. See the Sybase documentation on how to enable this feature on 
+the server.</p>
+
+<pre class="sh_perl sh_sourceCode">     <span class="sh_variable">$dbh</span> <span class="sh_symbol">=</span> DBI<span class="sh_symbol">-&gt;</span><span class="sh_function">connect</span><span class="sh_symbol">(</span><span class="sh_string">"dbi:Sybase:packetSize=8192"</span><span class="sh_symbol">,</span>
+                         <span class="sh_variable">$user</span><span class="sh_symbol">,</span> <span class="sh_variable">$passwd</span><span class="sh_symbol">);</span></pre>
+
+</dd><dt><a name="interfaces">interfaces</a></dt>
+
+<dd>
+<p>Specify the location of an alternate <i>interfaces</i> file:</p>
+
+<pre class="sh_perl sh_sourceCode">     <span class="sh_variable">$dbh</span> <span class="sh_symbol">=</span> DBI<span class="sh_symbol">-&gt;</span><span class="sh_function">connect</span><span class="sh_symbol">(</span><span class="sh_string">"dbi:Sybase:interfaces=/usr/local/sybase/interfaces"</span><span class="sh_symbol">,</span>
+                         <span class="sh_variable">$user</span><span class="sh_symbol">,</span> <span class="sh_variable">$passwd</span><span class="sh_symbol">);</span></pre>
+
+</dd><dt><a name="loginTimeout">loginTimeout</a></dt>
+
+<dd>
+<p>Specify the number of seconds that DBI-&gt;connect() will wait for a 
+response from the Sybase server. If the server fails to respond before 
+the specified number of seconds the DBI-&gt;connect() call fails with a 
+timeout error. The default value is 60 seconds, which is usually enough,
+ but on a busy server it is sometimes necessary to increase this value:</p>
+
+<pre class="sh_perl sh_sourceCode">     <span class="sh_variable">$dbh</span> <span class="sh_symbol">=</span> DBI<span class="sh_symbol">-&gt;</span><span class="sh_function">connect</span><span class="sh_symbol">(</span><span class="sh_string">"dbi:Sybase:loginTimeout=240"</span><span class="sh_symbol">,</span> <span class="sh_comment"># wait up to 4 minutes</span>
+                         <span class="sh_variable">$user</span><span class="sh_symbol">,</span> <span class="sh_variable">$passwd</span><span class="sh_symbol">);</span></pre>
+
+</dd><dt><a name="timeout">timeout</a></dt>
+
+<dd>
+<p>Specify the number of seconds after which any Open Client calls will 
+timeout the connection and mark it as dead. Once a timeout error has 
+been received on a connection it should be closed and re-opened for 
+further processing.</p>
+
+<p>Setting this value to 0 or a negative number will result in an 
+unlimited timeout value. See also the Open Client documentation on 
+CS_TIMEOUT.</p>
+
+<pre class="sh_perl sh_sourceCode">     <span class="sh_variable">$dbh</span> <span class="sh_symbol">=</span> DBI<span class="sh_symbol">-&gt;</span><span class="sh_function">connect</span><span class="sh_symbol">(</span><span class="sh_string">"dbi:Sybase:timeout=240"</span><span class="sh_symbol">,</span> <span class="sh_comment"># wait up to 4 minutes</span>
+                         <span class="sh_variable">$user</span><span class="sh_symbol">,</span> <span class="sh_variable">$passwd</span><span class="sh_symbol">);</span></pre>
+
+</dd><dt><a name="scriptName">scriptName</a></dt>
+
+<dd>
+<p>Specify the name for this connection that will be displayed in sp_who (ie in the sysprocesses table in the <i>program_name</i> column).</p>
+
+<pre class="sh_perl sh_sourceCode">    <span class="sh_variable">$dbh</span><span class="sh_symbol">=</span>DBI<span class="sh_symbol">-&gt;</span><span class="sh_function">connect</span><span class="sh_symbol">(</span><span class="sh_string">"dbi:Sybase:scriptName=myScript"</span><span class="sh_symbol">,</span> <span class="sh_variable">$user</span><span class="sh_symbol">,</span> <span class="sh_variable">$password</span><span class="sh_symbol">);</span></pre>
+
+</dd><dt><a name="hostname">hostname</a></dt>
+
+<dd>
+<p>Specify the hostname that will be displayed by sp_who (and will be stored in the hostname column of sysprocesses)..</p>
+
+<pre class="sh_perl sh_sourceCode">    <span class="sh_variable">$dbh</span><span class="sh_symbol">=</span>DBI<span class="sh_symbol">-&gt;</span><span class="sh_function">connect</span><span class="sh_symbol">(</span><span class="sh_string">"dbi:Sybase:hostname=kiruna"</span><span class="sh_symbol">,</span> <span class="sh_variable">$user</span><span class="sh_symbol">,</span> <span class="sh_variable">$password</span><span class="sh_symbol">);</span></pre>
+
+</dd><dt><a name="tdsLevel">tdsLevel</a></dt>
+
+<dd>
+<p>Specify the TDS protocol level to use when connecting to the server. 
+Valid values are CS_TDS_40, CS_TDS_42, CS_TDS_46, CS_TDS_495 and 
+CS_TDS_50. In general this is automatically negotiated between the 
+client and the server, but in certain cases this may need to be forced 
+to a lower level by the client.</p>
+
+<pre class="sh_perl sh_sourceCode">    <span class="sh_variable">$dbh</span><span class="sh_symbol">=</span>DBI<span class="sh_symbol">-&gt;</span><span class="sh_function">connect</span><span class="sh_symbol">(</span><span class="sh_string">"dbi:Sybase:tdsLevel=CS_TDS_42"</span><span class="sh_symbol">,</span> <span class="sh_variable">$user</span><span class="sh_symbol">,</span> <span class="sh_variable">$password</span><span class="sh_symbol">);</span></pre>
+
+<p><b>NOTE</b>: Setting the tdsLevel below CS_TDS_495 will disable a 
+number of features, ?-style placeholders and CHAINED non-AutoCommit 
+mode, in particular.</p>
+
+</dd><dt><a name="encryptPassword">encryptPassword</a></dt>
+
+<dd>
+<p>Specify the use of the client password encryption supported by CT-Lib. Specify a value of 1 to use encrypted passwords.</p>
+
+<pre class="sh_perl sh_sourceCode">    <span class="sh_variable">$dbh</span><span class="sh_symbol">=</span>DBI<span class="sh_symbol">-&gt;</span><span class="sh_function">connect</span><span class="sh_symbol">(</span><span class="sh_string">"dbi:Sybase:encryptPassword=1"</span><span class="sh_symbol">,</span> <span class="sh_variable">$user</span><span class="sh_symbol">,</span> <span class="sh_variable">$password</span><span class="sh_symbol">);</span></pre>
+
+</dd><dt><a name="kerberos">kerberos</a></dt>
+
+<dd>
+<p>Note: Requires OpenClient 11.1.1 or later.</p>
+
+<p>Sybase and OpenClient can use Kerberos to perform network-based 
+login. If you use Kerberos for authentication you can use this feature 
+and pass a kerberos serverprincipal using the <code>kerberos=value</code> parameter:</p>
+
+<pre class="sh_perl sh_sourceCode">    <span class="sh_variable">$dbh</span> <span class="sh_symbol">=</span> DBI<span class="sh_symbol">-&gt;</span><span class="sh_function">connect</span><span class="sh_symbol">(</span><span class="sh_string">"dbi:Sybase:kerberos=$serverprincipal"</span><span class="sh_symbol">,</span> <span class="sh_string">''</span><span class="sh_symbol">,</span> <span class="sh_string">''</span><span class="sh_symbol">);</span></pre>
+
+<p>In addition, if you have a system for retrieving Kerberos 
+serverprincipals at run-time you can tell DBD::Sybase to call a perl 
+subroutine to get the serverprincipal from connect():</p>
+
+<pre class="sh_perl sh_sourceCode">    <span class="sh_keyword">sub</span> sybGetPrinc <span class="sh_cbracket">{</span>
+        <span class="sh_keyword">my</span> <span class="sh_variable">$srv</span> <span class="sh_symbol">=</span> <span class="sh_keyword">shift</span><span class="sh_symbol">;</span>
+        <span class="sh_keyword">return</span> the serverprincipal<span class="sh_symbol">...</span>
+    <span class="sh_cbracket">}</span>
+    <span class="sh_variable">$dbh</span> <span class="sh_symbol">=</span> DBI<span class="sh_symbol">-&gt;</span><span class="sh_function">connect</span><span class="sh_symbol">(</span><span class="sh_string">'dbi:Sybase:server=troll'</span><span class="sh_symbol">,</span> <span class="sh_string">''</span><span class="sh_symbol">,</span> <span class="sh_string">''</span><span class="sh_symbol">,</span> <span class="sh_cbracket">{</span> syb_kerberos_serverprincipal <span class="sh_symbol">=&gt;</span> <span class="sh_symbol">\&amp;</span>sybGetPrinc <span class="sh_cbracket">}</span><span class="sh_symbol">);</span></pre>
+
+<p>The subroutine will be called with one argument (the server that we 
+will connect to, using the normal Sybase behavior of checking the 
+DSQUERY environment variable if no server is specified in the connect())
+ and is expected to return a string (the Kerberos serverprincipal) to 
+the caller.</p>
+
+</dd><dt><a name="sslCAFile">sslCAFile</a></dt>
+
+<dd>
+<p>Specify the location of an alternate <i>trusted.txt</i> file for SSL connection negotiation:</p>
+
+<pre class="sh_perl sh_sourceCode">  <span class="sh_variable">$dbh</span><span class="sh_symbol">-&gt;</span>DBI<span class="sh_symbol">-&gt;</span><span class="sh_function">connect</span><span class="sh_symbol">(</span><span class="sh_string">"dbi:Sybase:sslCAFile=/usr/local/sybase/trusted.txt.ENGINEERING"</span><span class="sh_symbol">,</span> <span class="sh_variable">$user</span><span class="sh_symbol">,</span> <span class="sh_variable">$password</span><span class="sh_symbol">);</span> </pre>
+
+</dd><dt><a name="bulkLogin">bulkLogin</a></dt>
+
+<dd>
+<p>Set this to 1 if the connection is going to be used for a bulk-load operation (see <i>Experimental Bulk-Load functionality</i> elsewhere in this document.)</p>
+
+<pre class="sh_perl sh_sourceCode">  <span class="sh_variable">$dbh</span><span class="sh_symbol">-&gt;</span>DBI<span class="sh_symbol">-&gt;</span><span class="sh_function">connect</span><span class="sh_symbol">(</span><span class="sh_string">"dbi:Sybase:bulkLogin=1"</span><span class="sh_symbol">,</span> <span class="sh_variable">$user</span><span class="sh_symbol">,</span> <span class="sh_variable">$password</span><span class="sh_symbol">);</span></pre>
+
+</dd><dt><a name="serverType">serverType</a></dt>
+
+<dd>
+<p>Tell DBD::Sybase what the server type is. Defaults to ASE. Setting it
+ to something else will prevent certain actions (such as setting 
+options, fetching the ASE version via @@version, etc.) and avoid 
+spurious errors.</p>
+
+</dd><dt><a name="tds_keepalive">tds_keepalive</a></dt>
+
+<dd>
+<p>Set this to 1 to tell OpenClient to enable the KEEP_ALIVE attribute on the connection. Default 1.</p>
+</dd>
+</dl>
+
+<p>These different parameters (as well as the server name) can be strung together by separating each entry with a semi-colon:</p>
+
+<pre class="sh_perl sh_sourceCode">    <span class="sh_variable">$dbh</span> <span class="sh_symbol">=</span> DBI<span class="sh_symbol">-&gt;</span><span class="sh_function">connect</span><span class="sh_symbol">(</span><span class="sh_string">"dbi:Sybase:server=ENGINEERING;packetSize=8192;language=us_english;charset=iso_1"</span><span class="sh_symbol">,</span>
+                        <span class="sh_variable">$user</span><span class="sh_symbol">,</span> <span class="sh_variable">$pwd</span><span class="sh_symbol">);</span></pre>
+
+<h1><a class="u" href="#___top" title="click to go to top of document" name="Handling_Multiple_Result_Sets">Handling Multiple Result Sets <img alt="^" src="Sybase.pm_files/up.gif"></a></h1>
+
+<p>Sybase's Transact SQL has the ability to return multiple result sets from a single SQL statement. For example the query:</p>
+
+<pre class="sh_perl sh_sourceCode">    <span class="sh_keyword">select</span> b<span class="sh_symbol">.</span>title<span class="sh_symbol">,</span> b<span class="sh_symbol">.</span>author<span class="sh_symbol">,</span> <span class="sh_keyword">s</span><span class="sh_symbol">.</span>amount
+      from books b<span class="sh_symbol">,</span> sales <span class="sh_keyword">s</span>
+     where <span class="sh_keyword">s</span><span class="sh_symbol">.</span>authorID <span class="sh_symbol">=</span> b<span class="sh_symbol">.</span>authorID
+     order by b<span class="sh_symbol">.</span>author<span class="sh_symbol">,</span> b<span class="sh_symbol">.</span>title
+    compute <span class="sh_function">sum</span><span class="sh_symbol">(</span><span class="sh_keyword">s</span><span class="sh_symbol">.</span>amount<span class="sh_symbol">)</span> by b<span class="sh_symbol">.</span>author</pre>
+
+<p>which lists sales by author and title and also computes the total 
+sales by author returns two types of rows. The DBI spec doesn't really 
+handle this situation, nor the more hairy</p>
+
+<pre class="sh_perl sh_sourceCode">    <span class="sh_keyword">exec</span> my_proc <span class="sh_variable">@p1</span><span class="sh_symbol">=</span><span class="sh_string">'this'</span><span class="sh_symbol">,</span> <span class="sh_variable">@p2</span><span class="sh_symbol">=</span><span class="sh_string">'that'</span><span class="sh_symbol">,</span> <span class="sh_variable">@p3</span> out</pre>
+
+<p>where <code>my_proc</code> could return any number of result sets (ie it could perform an unknown number of <code>select</code> statements.</p>
+
+<p>I've decided to handle this by returning an empty row at the end of 
+each result set, and by setting a special Sybase attribute in $sth which
+ you can check to see if there is more data to be fetched. The attribute
+ is <b>syb_more_results</b> which you should check to see if you need to re-start the <code>fetch()</code> loop.</p>
+
+<p>To make sure all results are fetched, the basic <code>fetch</code> loop can be written like this:</p>
+
+<pre class="sh_perl sh_sourceCode">     <span class="sh_cbracket">{</span>
+         <span class="sh_keyword">while</span><span class="sh_symbol">(</span><span class="sh_variable">$d</span> <span class="sh_symbol">=</span> <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span>fetch<span class="sh_symbol">)</span> <span class="sh_cbracket">{</span>
+            <span class="sh_symbol">...</span> <span class="sh_keyword">do</span> something with the data
+         <span class="sh_cbracket">}</span>
+
+         <span class="sh_keyword">redo</span> <span class="sh_keyword">if</span> <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span><span class="sh_cbracket">{</span>syb_more_results<span class="sh_cbracket">}</span><span class="sh_symbol">;</span>
+     <span class="sh_cbracket">}</span></pre>
+
+<p>You can get the type of the current result set with 
+$sth-&gt;{syb_result_type}. This returns a numerical value, as defined 
+in $SYBASE/$SYBASE_OCS/include/cspublic.h:</p>
+
+<pre class="sh_perl sh_sourceCode">        <span class="sh_comment">#define CS_ROW_RESULT           (CS_INT)4040</span>
+        <span class="sh_comment">#define CS_CURSOR_RESULT        (CS_INT)4041</span>
+        <span class="sh_comment">#define CS_PARAM_RESULT         (CS_INT)4042</span>
+        <span class="sh_comment">#define CS_STATUS_RESULT        (CS_INT)4043</span>
+        <span class="sh_comment">#define CS_MSG_RESULT           (CS_INT)4044</span>
+        <span class="sh_comment">#define CS_COMPUTE_RESULT       (CS_INT)4045</span></pre>
+
+<p>In particular, the return status of a stored procedure is returned as
+ CS_STATUS_RESULT (4043), and is normally the last result set that is 
+returned in a stored proc execution, but see the <b>syb_do_proc_status</b> attribute for an alternative way of handling this result type. See <b>Executing Stored Procedures</b> elsewhere in this document for more information.</p>
+
+<p>If you add a</p>
+
+<pre class="sh_perl sh_sourceCode">    <span class="sh_keyword">use</span> DBD<span class="sh_symbol">::</span>Sybase<span class="sh_symbol">;</span></pre>
+
+<p>to your script then you can use the symbolic values (CS_xxx_RESULT) 
+instead of the numeric values in your programs, which should make them 
+easier to read.</p>
+
+<p>See also the <code>$sth-</code>syb_output_params&gt; call to handle stored procedures that <b>only</b> return <b>OUTPUT</b> parameters.</p>
+
+<h1><a class="u" href="#___top" title="click to go to top of document" name="$sth-&gt;execute()_failure_mode_behavior">$sth-&gt;execute() failure mode behavior <img alt="^" src="Sybase.pm_files/up.gif"></a></h1>
+
+<p>DBD::Sybase has the ability to handle multi-statement SQL commands in
+ a single batch. For example, you could insert several rows in a single 
+batch like this:</p>
+
+<pre class="sh_perl sh_sourceCode">   <span class="sh_variable">$sth</span> <span class="sh_symbol">=</span> <span class="sh_variable">$dbh</span><span class="sh_symbol">-&gt;</span><span class="sh_function">prepare</span><span class="sh_symbol">(</span><span class="sh_string">"</span>
+   insert <span class="sh_function">foo</span><span class="sh_symbol">(</span>one<span class="sh_symbol">,</span> two<span class="sh_symbol">,</span> three<span class="sh_symbol">)</span> <span class="sh_keyword">values</span><span class="sh_symbol">(</span><span class="sh_number">1</span><span class="sh_symbol">,</span> <span class="sh_number">2</span><span class="sh_symbol">,</span> <span class="sh_number">3</span><span class="sh_symbol">)</span>
+   insert <span class="sh_function">foo</span><span class="sh_symbol">(</span>one<span class="sh_symbol">,</span> two<span class="sh_symbol">,</span> three<span class="sh_symbol">)</span> <span class="sh_keyword">values</span><span class="sh_symbol">(</span><span class="sh_number">4</span><span class="sh_symbol">,</span> <span class="sh_number">5</span><span class="sh_symbol">,</span> <span class="sh_number">6</span><span class="sh_symbol">)</span>
+   insert <span class="sh_function">foo</span><span class="sh_symbol">(</span>one<span class="sh_symbol">,</span> two<span class="sh_symbol">,</span> three<span class="sh_symbol">)</span> <span class="sh_keyword">values</span><span class="sh_symbol">(</span><span class="sh_number">10</span><span class="sh_symbol">,</span> <span class="sh_number">11</span><span class="sh_symbol">,</span> <span class="sh_number">12</span><span class="sh_symbol">)</span>
+   insert <span class="sh_function">foo</span><span class="sh_symbol">(</span>one<span class="sh_symbol">,</span> two<span class="sh_symbol">,</span> three<span class="sh_symbol">)</span> <span class="sh_keyword">values</span><span class="sh_symbol">(</span><span class="sh_number">11</span><span class="sh_symbol">,</span> <span class="sh_number">12</span><span class="sh_symbol">,</span> <span class="sh_number">13</span><span class="sh_symbol">)</span>
+   <span class="sh_string">");</span>
+   <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span>execute<span class="sh_symbol">;</span></pre>
+
+<p>If any one of the above inserts fails for any reason then $sth-&gt;execute will return <code>undef</code>, <b>HOWEVER</b> the inserts that didn't fail will still be in the database, unless <code>AutoCommit</code> is off.</p>
+
+<p>It's also possible to write a statement like this:</p>
+
+<pre class="sh_perl sh_sourceCode">   <span class="sh_variable">$sth</span> <span class="sh_symbol">=</span> <span class="sh_variable">$dbh</span><span class="sh_symbol">-&gt;</span><span class="sh_function">prepare</span><span class="sh_symbol">(</span><span class="sh_string">"</span>
+   insert <span class="sh_function">foo</span><span class="sh_symbol">(</span>one<span class="sh_symbol">,</span> two<span class="sh_symbol">,</span> three<span class="sh_symbol">)</span> <span class="sh_keyword">values</span><span class="sh_symbol">(</span><span class="sh_number">1</span><span class="sh_symbol">,</span> <span class="sh_number">2</span><span class="sh_symbol">,</span> <span class="sh_number">3</span><span class="sh_symbol">)</span>
+   <span class="sh_keyword">select</span> <span class="sh_symbol">*</span> from bar
+   insert <span class="sh_function">foo</span><span class="sh_symbol">(</span>one<span class="sh_symbol">,</span> two<span class="sh_symbol">,</span> three<span class="sh_symbol">)</span> <span class="sh_keyword">values</span><span class="sh_symbol">(</span><span class="sh_number">10</span><span class="sh_symbol">,</span> <span class="sh_number">11</span><span class="sh_symbol">,</span> <span class="sh_number">12</span><span class="sh_symbol">)</span>
+   <span class="sh_string">");</span>
+   <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span>execute<span class="sh_symbol">;</span></pre>
+
+<p>If the second <code>insert</code> is the one that fails, then $sth-&gt;execute will <b>NOT</b> return <code>undef</code>. The error will get flagged after the rows from <code>bar</code> have been fetched.</p>
+
+<p>I know that this is not as intuitive as it could be, but I am constrained by the Sybase API here.</p>
+
+<p>As an aside, I know that the example above doesn't really make sense,
+ but I need to illustrate this particular sequence... You can also see 
+the t/fail.t test script which shows this particular behavior.</p>
+
+<h1><a class="u" href="#___top" title="click to go to top of document" name="Sybase_Specific_Attributes">Sybase Specific Attributes <img alt="^" src="Sybase.pm_files/up.gif"></a></h1>
+
+<p>There are a number of handle attributes that are specific to this driver. These attributes all start with <b>syb_</b> so as to not clash with any normal DBI attributes.</p>
+
+<h2><a class="u" href="#___top" title="click to go to top of document" name="Database_Handle_Attributes">Database Handle Attributes</a></h2>
+
+<p>The following Sybase specific attributes can be set at the Database handle level:</p>
+
+<dl>
+<dt><a name="syb_show_sql"></a><a name="syb_show_sql_(bool)">syb_show_sql (bool)</a></dt>
+
+<dd>
+<p>If set then the current statement is included in the string returned by $dbh-&gt;errstr.</p>
+
+</dd><dt><a name="syb_show_eed"></a><a name="syb_show_eed_(bool)">syb_show_eed (bool)</a></dt>
+
+<dd>
+<p>If set, then extended error information is included in the string 
+returned by $dbh-&gt;errstr. Extended error information include the 
+index causing a duplicate insert to fail, for example.</p>
+
+</dd><dt><a name="syb_err_handler"></a><a name="syb_err_handler_(subroutine_ref)">syb_err_handler (subroutine ref)</a></dt>
+
+<dd>
+<p>This attribute is used to set an ad-hoc error handler callback (ie a 
+perl subroutine) that gets called before the normal error handler does 
+it's job. If this subroutine returns 0 then the error is ignored. This 
+is useful for handling PRINT statements in Transact-SQL, for handling 
+messages from the Backup Server, showplan output, dbcc output, etc.</p>
+
+<p>The subroutine is called with nine parameters:</p>
+
+<pre class="sh_perl sh_sourceCode">  o the Sybase error number
+  o the severity
+  o the state
+  o the line number in the SQL batch
+  o the server <span class="sh_function">name</span> <span class="sh_symbol">(</span><span class="sh_keyword">if</span> available<span class="sh_symbol">)</span>
+  o the stored procedure <span class="sh_function">name</span> <span class="sh_symbol">(</span><span class="sh_keyword">if</span> available<span class="sh_symbol">)</span>
+  o the message text
+  o the current SQL command buffer
+  o either of the strings <span class="sh_string">"client"</span> <span class="sh_symbol">(</span><span class="sh_keyword">for</span> Client Library errors<span class="sh_symbol">)</span> or
+    <span class="sh_string">"server"</span> <span class="sh_symbol">(</span><span class="sh_keyword">for</span> server errors<span class="sh_symbol">,</span> such as SQL syntax errors<span class="sh_symbol">,</span> etc<span class="sh_symbol">),</span>
+    allowing you to identify the error type<span class="sh_symbol">.</span></pre>
+
+<p>As a contrived example, here is a port of the distinct error and message handlers from the Sybase documentation:</p>
+
+<pre class="sh_perl sh_sourceCode">  Example<span class="sh_symbol">:</span>
+  
+  <span class="sh_keyword">sub</span> err_handler <span class="sh_cbracket">{</span>
+      <span class="sh_keyword">my</span><span class="sh_symbol">(</span><span class="sh_variable">$err</span><span class="sh_symbol">,</span> <span class="sh_variable">$sev</span><span class="sh_symbol">,</span> <span class="sh_variable">$state</span><span class="sh_symbol">,</span> <span class="sh_variable">$line</span><span class="sh_symbol">,</span> <span class="sh_variable">$server</span><span class="sh_symbol">,</span>
+        <span class="sh_variable">$proc</span><span class="sh_symbol">,</span> <span class="sh_variable">$msg</span><span class="sh_symbol">,</span> <span class="sh_variable">$sql</span><span class="sh_symbol">,</span> <span class="sh_variable">$err_type</span><span class="sh_symbol">)</span> <span class="sh_symbol">=</span> <span class="sh_variable">@_</span><span class="sh_symbol">;</span>
+ 
+      <span class="sh_keyword">my</span> <span class="sh_variable">@msg</span> <span class="sh_symbol">=</span> <span class="sh_symbol">();</span>
+      <span class="sh_keyword">if</span><span class="sh_symbol">(</span><span class="sh_variable">$err_type</span> <span class="sh_keyword">eq</span> <span class="sh_string">'server'</span><span class="sh_symbol">)</span> <span class="sh_cbracket">{</span>
+         <span class="sh_keyword">push</span> <span class="sh_variable">@msg</span><span class="sh_symbol">,</span>
+           <span class="sh_symbol">(</span><span class="sh_string">''</span><span class="sh_symbol">,</span>
+            <span class="sh_string">'Server message'</span><span class="sh_symbol">,</span>
+            <span class="sh_keyword">sprintf</span><span class="sh_symbol">(</span><span class="sh_string">'Message number: %ld, Severity %ld, State %ld, Line %ld'</span><span class="sh_symbol">,</span>
+                    <span class="sh_variable">$err</span><span class="sh_symbol">,</span><span class="sh_variable">$sev</span><span class="sh_symbol">,</span><span class="sh_variable">$state</span><span class="sh_symbol">,</span><span class="sh_variable">$line</span><span class="sh_symbol">),</span>
+            <span class="sh_symbol">(</span><span class="sh_keyword">defined</span><span class="sh_symbol">(</span><span class="sh_variable">$server</span><span class="sh_symbol">)</span> <span class="sh_symbol">?</span> <span class="sh_string">"Server '$server' "</span> <span class="sh_symbol">:</span> <span class="sh_string">''</span><span class="sh_symbol">)</span> <span class="sh_symbol">.</span>
+            <span class="sh_symbol">(</span><span class="sh_keyword">defined</span><span class="sh_symbol">(</span><span class="sh_variable">$proc</span><span class="sh_symbol">)</span> <span class="sh_symbol">?</span> <span class="sh_string">"Procedure '$proc'"</span> <span class="sh_symbol">:</span> <span class="sh_string">''</span><span class="sh_symbol">),</span>
+            <span class="sh_string">"Message String:$msg"</span><span class="sh_symbol">);</span>
+      <span class="sh_cbracket">}</span> <span class="sh_keyword">else</span> <span class="sh_cbracket">{</span>
+         <span class="sh_keyword">push</span> <span class="sh_variable">@msg</span><span class="sh_symbol">,</span>
+           <span class="sh_symbol">(</span><span class="sh_string">''</span><span class="sh_symbol">,</span>
+            <span class="sh_string">'Open Client Message:'</span><span class="sh_symbol">,</span>
+            <span class="sh_keyword">sprintf</span><span class="sh_symbol">(</span><span class="sh_string">'Message number: SEVERITY = (%ld) NUMBER = (%ld)'</span><span class="sh_symbol">,</span>
+                    <span class="sh_variable">$sev</span><span class="sh_symbol">,</span> <span class="sh_variable">$err</span><span class="sh_symbol">),</span>
+            <span class="sh_string">"Message String: $msg"</span><span class="sh_symbol">);</span>
+      <span class="sh_cbracket">}</span>
+      <span class="sh_keyword">print</span> STDERR <span class="sh_keyword">join</span><span class="sh_symbol">(</span><span class="sh_string">"\n"</span><span class="sh_symbol">,</span><span class="sh_variable">@msg</span><span class="sh_symbol">);</span>
+      <span class="sh_keyword">return</span> <span class="sh_number">0</span><span class="sh_symbol">;</span> <span class="sh_comment">## CS_SUCCEED</span>
+  <span class="sh_cbracket">}</span></pre>
+
+<p>In a simpler and more focused example, this error handler traps showplan messages:</p>
+
+<pre class="sh_perl sh_sourceCode">   <span class="sh_variable">%showplan_msgs</span> <span class="sh_symbol">=</span> <span class="sh_keyword">map</span> <span class="sh_cbracket">{</span> <span class="sh_variable">$_</span> <span class="sh_symbol">=&gt;</span> <span class="sh_number">1</span><span class="sh_cbracket">}</span>  <span class="sh_symbol">(</span><span class="sh_number">3612</span> <span class="sh_symbol">..</span> <span class="sh_number">3615</span><span class="sh_symbol">,</span> <span class="sh_number">6201</span> <span class="sh_symbol">..</span> <span class="sh_number">6299</span><span class="sh_symbol">,</span> <span class="sh_number">10201</span> <span class="sh_symbol">..</span> <span class="sh_number">10299</span><span class="sh_symbol">);</span>
+   <span class="sh_keyword">sub</span> err_handler <span class="sh_cbracket">{</span>
+      <span class="sh_keyword">my</span><span class="sh_symbol">(</span><span class="sh_variable">$err</span><span class="sh_symbol">,</span> <span class="sh_variable">$sev</span><span class="sh_symbol">,</span> <span class="sh_variable">$state</span><span class="sh_symbol">,</span> <span class="sh_variable">$line</span><span class="sh_symbol">,</span> <span class="sh_variable">$server</span><span class="sh_symbol">,</span>
+        <span class="sh_variable">$proc</span><span class="sh_symbol">,</span> <span class="sh_variable">$msg</span><span class="sh_symbol">,</span> <span class="sh_variable">$sql</span><span class="sh_symbol">,</span> <span class="sh_variable">$err_type</span><span class="sh_symbol">)</span> <span class="sh_symbol">=</span> <span class="sh_variable">@_</span><span class="sh_symbol">;</span>
+  
+       <span class="sh_keyword">if</span><span class="sh_symbol">(</span><span class="sh_variable">$showplan_msgs</span><span class="sh_cbracket">{</span><span class="sh_variable">$err</span><span class="sh_cbracket">}</span><span class="sh_symbol">)</span> <span class="sh_cbracket">{</span> <span class="sh_comment"># it's a showplan message</span>
+         <span class="sh_keyword">print</span> SHOWPLAN <span class="sh_string">"$err - $msg\n"</span><span class="sh_symbol">;</span>
+         <span class="sh_keyword">return</span> <span class="sh_number">0</span><span class="sh_symbol">;</span>    <span class="sh_comment"># This is not an error</span>
+       <span class="sh_cbracket">}</span>
+       <span class="sh_keyword">return</span> <span class="sh_number">1</span><span class="sh_symbol">;</span>
+   <span class="sh_cbracket">}</span></pre>
+
+<p>and this is how you would use it:</p>
+
+<pre class="sh_perl sh_sourceCode">    <span class="sh_variable">$dbh</span> <span class="sh_symbol">=</span> DBI<span class="sh_symbol">-&gt;</span><span class="sh_function">connect</span><span class="sh_symbol">(</span><span class="sh_string">'dbi:Sybase:server=troll'</span><span class="sh_symbol">,</span> <span class="sh_string">'sa'</span><span class="sh_symbol">,</span> <span class="sh_string">''</span><span class="sh_symbol">);</span>
+    <span class="sh_variable">$dbh</span><span class="sh_symbol">-&gt;</span><span class="sh_cbracket">{</span>syb_err_handler<span class="sh_cbracket">}</span> <span class="sh_symbol">=</span> <span class="sh_symbol">\&amp;</span>err_handler<span class="sh_symbol">;</span>
+    <span class="sh_variable">$dbh</span><span class="sh_symbol">-&gt;</span><span class="sh_keyword">do</span><span class="sh_symbol">(</span><span class="sh_string">"set showplan on"</span><span class="sh_symbol">);</span>
+    <span class="sh_keyword">open</span><span class="sh_symbol">(</span>SHOWPLAN<span class="sh_symbol">,</span> <span class="sh_string">"&gt;&gt;/var/tmp/showplan.log"</span><span class="sh_symbol">)</span> <span class="sh_symbol">||</span> <span class="sh_keyword">die</span> <span class="sh_string">"Can't open showplan log: $!"</span><span class="sh_symbol">;</span>
+    <span class="sh_variable">$dbh</span><span class="sh_symbol">-&gt;</span><span class="sh_keyword">do</span><span class="sh_symbol">(</span><span class="sh_string">"exec someproc"</span><span class="sh_symbol">);</span>    <span class="sh_comment"># get the showplan trace for this proc.</span>
+    <span class="sh_variable">$dbh</span><span class="sh_symbol">-&gt;</span>disconnect<span class="sh_symbol">;</span></pre>
+
+<p><b>NOTE</b> - if you set the error handler in the DBI-&gt;connect() call like this</p>
+
+<pre class="sh_perl sh_sourceCode">    <span class="sh_variable">$dbh</span> <span class="sh_symbol">=</span> DBI<span class="sh_symbol">-&gt;</span><span class="sh_function">connect</span><span class="sh_symbol">(</span><span class="sh_string">'dbi:Sybase:server=troll'</span><span class="sh_symbol">,</span> <span class="sh_string">'sa'</span><span class="sh_symbol">,</span> <span class="sh_string">''</span><span class="sh_symbol">,</span> 
+                    <span class="sh_cbracket">{</span> syb_err_handler <span class="sh_symbol">=&gt;</span> <span class="sh_symbol">\&amp;</span>err_handler <span class="sh_cbracket">}</span><span class="sh_symbol">);</span></pre>
+
+<p>then the err_handler() routine will get called if there is an error during the connect itself. This is <b>new</b> behavior in DBD::Sybase 0.95.</p>
+
+</dd><dt><a name="syb_flush_finish"></a><a name="syb_flush_finish_(bool)">syb_flush_finish (bool)</a></dt>
+
+<dd>
+<p>If $dbh-&gt;{syb_flush_finish} is set then $dbh-&gt;finish will drain
+ any results remaining for the current command by actually fetching 
+them. The default behaviour is to issue a ct_cancel(CS_CANCEL_ALL), but 
+this <i>appears</i> to cause connections to hang or to fail in certain cases (although I've never witnessed this myself.)</p>
+
+</dd><dt><a name="syb_dynamic_supported"></a><a name="syb_dynamic_supported_(bool)">syb_dynamic_supported (bool)</a></dt>
+
+<dd>
+<p>This is a read-only attribute that returns TRUE if the dataserver you
+ are connected to supports ?-style placeholders. Typically placeholders 
+are not supported when using DBD::Sybase to connect to a MS-SQL server.</p>
+
+</dd><dt><a name="syb_chained_txn"></a><a name="syb_chained_txn_(bool)">syb_chained_txn (bool)</a></dt>
+
+<dd>
+<p>If set then we use CHAINED transactions when AutoCommit is off. 
+Otherwise we issue an explicit BEGIN TRAN as needed. The default is on 
+if it is supported by the server.</p>
+
+<p>This attribute should usually be used only during the connect() call:</p>
+
+<pre class="sh_perl sh_sourceCode">    <span class="sh_variable">$dbh</span> <span class="sh_symbol">=</span> DBI<span class="sh_symbol">-&gt;</span><span class="sh_function">connect</span><span class="sh_symbol">(</span><span class="sh_string">'dbi:Sybase:'</span><span class="sh_symbol">,</span> <span class="sh_variable">$user</span><span class="sh_symbol">,</span> <span class="sh_variable">$pwd</span><span class="sh_symbol">,</span> <span class="sh_cbracket">{</span>syb_chained_txn <span class="sh_symbol">=&gt;</span> <span class="sh_number">1</span><span class="sh_cbracket">}</span><span class="sh_symbol">);</span></pre>
+
+<p>Using it at any other time with <b>AutoCommit</b> turned <b>off</b> will <b>force a commit</b> on the current handle.</p>
+
+</dd><dt><a name="syb_quoted_identifier"></a><a name="syb_quoted_identifier_(bool)">syb_quoted_identifier (bool)</a></dt>
+
+<dd>
+<p>If set, then identifiers that would normally clash with Sybase reserved words can be quoted using <code>"identifier"</code>. In this case strings must be quoted with the single quote.</p>
+
+<p>This attribute can only be set if the database handle is idle (no active statement handle.)</p>
+
+<p>Default is for this attribute to be <b>off</b>.</p>
+
+</dd><dt><a name="syb_rowcount"></a><a name="syb_rowcount_(int)">syb_rowcount (int)</a></dt>
+
+<dd>
+<p>Setting this attribute to non-0 will limit the number of rows returned by a <i>SELECT</i>, or affected by an <i>UPDATE</i> or <i>DELETE</i> statement to the <i>rowcount</i> value. Setting it back to 0 clears the limit.</p>
+
+<p>This attribute can only be set if the database handle is idle.</p>
+
+<p>Default is for this attribute to be <b>0</b>.</p>
+
+</dd><dt><a name="syb_do_proc_status"></a><a name="syb_do_proc_status_(bool)">syb_do_proc_status (bool)</a></dt>
+
+<dd>
+<p>Setting this attribute causes $sth-&gt;execute() to fetch the return 
+status of any executed stored procs in the SQL being executed. If the 
+return status is non-0 then $sth-&gt;execute() will report that the 
+operation failed.</p>
+
+<p><b>NOTE</b> The result status is NOT the first result set that is 
+fetched from a stored proc execution. If the procedure includes SELECT 
+statements then these will be fetched first, which means that <code>$sth-</code>execute&gt; will NOT return a failure in that case as DBD::Sybase won't have seen the result status yet at that point.</p>
+
+<p>The RaiseError will NOT be triggered by a non-0 return status if 
+there isn't an associated error message either generated by Sybase 
+(duplicate insert error, etc) or generated in the procedure via a T-SQL <code>raiserror</code> statement.</p>
+
+<p>Setting this attribute does <b>NOT</b> affect existing $sth handles, 
+only those that are created after setting it. To change the behavior of 
+an existing $sth handle use $sth-&gt;{syb_do_proc_status}.</p>
+
+<p>The proc status is available in $sth-&gt;{syb_proc_status} after all the result sets in the procedure have been processed.</p>
+
+<p>The default is for this attribute to be <b>off</b>.</p>
+
+</dd><dt><a name="syb_use_bin_0x">syb_use_bin_0x</a></dt>
+
+<dd>
+<p>If set, BINARY and VARBINARY values are prefixed with '0x' in the result. The default is off.</p>
+
+</dd><dt><a name="syb_binary_images">syb_binary_images</a></dt>
+
+<dd>
+<p>If set, IMAGE data is returned in raw binary format. Otherwise the data is converted to a long hex string. The default is off.</p>
+
+</dd><dt><a name="syb_oc_version"></a><a name="syb_oc_version_(string)">syb_oc_version (string)</a></dt>
+
+<dd>
+<p>Returns the identification string of the version of Client Library 
+that this binary is currently using. This is a read-only attribute.</p>
+
+<p>For example:</p>
+
+<pre class="sh_perl sh_sourceCode">    <span class="sh_function">troll</span> <span class="sh_symbol">(</span><span class="sh_number">7</span><span class="sh_symbol">:</span>59AM<span class="sh_symbol">):</span><span class="sh_number">348</span> <span class="sh_symbol">&gt;</span> perl <span class="sh_symbol">-</span>MDBI <span class="sh_symbol">-</span>e <span class="sh_string">'$dbh = DBI-&gt;connect("dbi:Sybase:", "sa"); print "$dbh-&gt;{syb_oc_version}\n";'</span> 
+    Sybase Client<span class="sh_symbol">-</span>Library<span class="sh_string">/11.1.1/P/Linux Intel/Linux 2.2.5 i586/1/OPT/</span>Mon Jun  <span class="sh_number">7</span> <span class="sh_number">07</span><span class="sh_symbol">:</span><span class="sh_number">50</span><span class="sh_symbol">:</span><span class="sh_number">21</span> <span class="sh_number">1999</span></pre>
+
+<p>This is very useful information to have when reporting a problem.</p>
+
+</dd><dt><a name="syb_server_version">syb_server_version</a></dt>
+
+<dd>
+</dd><dt><a name="syb_server_version_string">syb_server_version_string</a></dt>
+
+<dd>
+<p>These two attributes return the Sybase server version, respectively 
+version string, and can be used to turn server-specific functionality on
+ or off.</p>
+
+<p>Example:</p>
+
+<pre class="sh_perl sh_sourceCode">    <span class="sh_keyword">print</span> <span class="sh_string">"$dbh-&gt;{syb_server_version}\n$dbh-&gt;{syb_server_version_string}\n"</span><span class="sh_symbol">;</span></pre>
+
+<p>prints</p>
+
+<pre class="sh_perl sh_sourceCode">    <span class="sh_number">12.5.2</span>
+    Adaptive Server Enterprise<span class="sh_string">/12.5.2/EBF 12061 ESD#2/P/Linux Intel/Enterprise Linux/ase1252/1844/32-bit/OPT/</span>Wed Aug <span class="sh_number">11</span> <span class="sh_number">21</span><span class="sh_symbol">:</span><span class="sh_number">36</span><span class="sh_symbol">:</span><span class="sh_number">26</span> <span class="sh_number">2004</span></pre>
+
+</dd><dt><a name="syb_failed_db_fatal"></a><a name="syb_failed_db_fatal_(bool)">syb_failed_db_fatal (bool)</a></dt>
+
+<dd>
+<p>If this is set, then a connect() request where the <i>database</i> 
+specified doesn't exist or is not accessible will fail. This needs to be
+ set in the attribute hash passed during the DBI-&gt;connect() call to 
+be effective.</p>
+
+<p>Default: off</p>
+
+</dd><dt><a name="syb_no_child_con"></a><a name="syb_no_child_con_(bool)">syb_no_child_con (bool)</a></dt>
+
+<dd>
+<p>If this attribute is set then DBD::Sybase will <b>not</b> allow 
+multiple simultaneously active statement handles on one database handle 
+(i.e. multiple $dbh-&gt;prepare() calls without completely processing 
+the results from any existing statement handle). This can be used to 
+debug situations where incorrect or unexpected results are found due to 
+the creation of a sub-connection where the connection attributes (in 
+particular the current database) are different.</p>
+
+<p>Default: off</p>
+
+</dd><dt><a name="syb_bind_empty_string_as_null"></a><a name="syb_bind_empty_string_as_null_(bool)">syb_bind_empty_string_as_null (bool)</a></dt>
+
+<dd>
+<p>If this attribute is set then an empty string (i.e. "") passed as a 
+parameter to an $sth-&gt;execute() call will be converted to a NULL 
+value. If the attribute is not set then an empty string is converted to a
+ single space.</p>
+
+<p>Default: off</p>
+
+</dd><dt><a name="syb_cancel_request_on_error"></a><a name="syb_cancel_request_on_error_(bool)">syb_cancel_request_on_error (bool)</a></dt>
+
+<dd>
+<p>If this attribute is set then a failure in a multi-statement request 
+(for example, a stored procedure execution) will cause 
+$sth-&gt;execute() to return failure, and will cause any other results 
+from this request to be discarded.</p>
+
+<p>The default value (<b>on</b>) changes the behavior that DBD::Sybase exhibited up to version 0.94.</p>
+
+<p>Default: on</p>
+
+</dd><dt><a name="syb_date_fmt"></a><a name="syb_date_fmt_(string)">syb_date_fmt (string)</a></dt>
+
+<dd>
+<p>Defines the date/time conversion string when fetching data. See the entry for the <code>syb_date_fmt()</code> method elsewhere in this document for a description of the available formats.</p>
+
+</dd><dt><a name="syb_has_blk"></a><a name="syb_has_blk_(bool)">syb_has_blk (bool)</a></dt>
+
+<dd>
+<p>This read-only attribute is set to TRUE if the BLK API is available in this version of DBD::Sybase.</p>
+
+</dd><dt><a name="syb_disconnect_in_child"></a><a name="syb_disconnect_in_child_(bool)">syb_disconnect_in_child (bool)</a></dt>
+
+<dd>
+<p>Sybase client library allows using opened connections across a fork 
+(i.e. the opened connection can be used in the child process). DBI by 
+default will set flags such that this connection will be closed when the
+ child process terminates. This is in most cases not what you want. DBI 
+provides the InactiveDestroy attribute to control this, but you have to 
+set this attribute manually as it defaults to False (i.e. when DESTROY 
+is called for the handle the connection is closed). The 
+syb_disconnect_in_child attribute attempts to correct this - the default
+ is for this attribute to be False - thereby inhibitting the closing of 
+the connection(s) when the current process ID doesn't match the process 
+ID that created the connection.</p>
+
+<p>Default: off</p>
+
+</dd><dt><a name="syb_enable_utf8"></a><a name="syb_enable_utf8_(bool)">syb_enable_utf8 (bool)</a></dt>
+
+<dd>
+<p>If this attribute is set then DBD::Sybase will convert UNIVARCHAR, 
+UNICHAR, and UNITEXT data to Perl's internal utf-8 encoding when they 
+are retrieved. Updating a unicode column will cause Sybase to convert 
+any incoming data from utf-8 to its internal utf-16 encoding.</p>
+
+<p>This feature requires OpenClient 15.x to work.</p>
+
+<p>Default: off</p>
+</dd>
+</dl>
+
+<h2><a class="u" href="#___top" title="click to go to top of document" name="Statement_Handle_Attributes">Statement Handle Attributes</a></h2>
+
+<p>The following read-only attributes are available at the statement level:</p>
+
+<dl>
+<dt><a name="syb_more_results"></a><a name="syb_more_results_(bool)">syb_more_results (bool)</a></dt>
+
+<dd>
+<p>See the discussion on handling multiple result sets above.</p>
+
+</dd><dt><a name="syb_result_type"></a><a name="syb_result_type_(int)">syb_result_type (int)</a></dt>
+
+<dd>
+<p>Returns the numeric result type of the current result set. Useful 
+when executing stored procedurs to determine what type of information is
+ currently fetchable (normal select rows, output parameters, status 
+results, etc...).</p>
+
+</dd><dt><a name="syb_do_proc_status"></a><a name="syb_do_proc_status_(bool)">syb_do_proc_status (bool)</a></dt>
+
+<dd>
+<p>See above (under Database Handle Attributes) for an explanation.</p>
+
+</dd><dt><a name="syb_proc_status"></a><a name="syb_proc_status_(read-only)">syb_proc_status (read-only)</a></dt>
+
+<dd>
+<p>If syb_do_proc_status is set, then the return status of stored procedures will be available via $sth-&gt;{syb_proc_status}.</p>
+
+</dd><dt><a name="syb_no_bind_blob"></a><a name="syb_no_bind_blob_(bool)">syb_no_bind_blob (bool)</a></dt>
+
+<dd>
+<p>If set then any IMAGE or TEXT columns in a query are <b>NOT</b> returned when calling $sth-&gt;fetch (or any variation).</p>
+
+<p>Instead, you would use</p>
+
+<pre class="sh_perl sh_sourceCode">    <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span><span class="sh_function">syb_ct_get_data</span><span class="sh_symbol">(</span><span class="sh_variable">$column</span><span class="sh_symbol">,</span> <span class="sh_symbol">\</span><span class="sh_variable">$data</span><span class="sh_symbol">,</span> <span class="sh_variable">$size</span><span class="sh_symbol">);</span></pre>
+
+<p>to retrieve the IMAGE or TEXT data. If $size is 0 then the entire 
+item is fetched, otherwis you can call this in a loop to fetch chunks of
+ data:</p>
+
+<pre class="sh_perl sh_sourceCode">    <span class="sh_keyword">while</span><span class="sh_symbol">(</span><span class="sh_number">1</span><span class="sh_symbol">)</span> <span class="sh_cbracket">{</span>
+        <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span><span class="sh_function">syb_ct_get_data</span><span class="sh_symbol">(</span><span class="sh_variable">$column</span><span class="sh_symbol">,</span> <span class="sh_symbol">\</span><span class="sh_variable">$data</span><span class="sh_symbol">,</span> <span class="sh_number">1024</span><span class="sh_symbol">);</span>
+        <span class="sh_keyword">last</span> <span class="sh_keyword">unless</span> <span class="sh_variable">$data</span><span class="sh_symbol">;</span>
+        <span class="sh_keyword">print</span> OUT <span class="sh_variable">$data</span><span class="sh_symbol">;</span>
+    <span class="sh_cbracket">}</span></pre>
+
+<p>The fetched data is still subject to Sybase's TEXTSIZE option (see 
+the SET command in the Sybase reference manual). This can be manipulated
+ with DBI's <b>LongReadLen</b> attribute, but <code>$dbh-</code>{LongReadLen}&gt; <i>must</i>
+ be set before $dbh-&gt;prepare() is called to take effect (this is a 
+change in 1.05 - previously you could call it after the prepare() but 
+before the execute()). Note that LongReadLen has no effect when using 
+DBD::Sybase with an MS-SQL server.</p>
+
+<p><b>Note</b>: The IMAGE or TEXT column that is to be fetched this way <i>must</i> be <i>last</i> in the select list.</p>
+
+<p>See also the description of the ct_get_data() API call in the Sybase 
+OpenClient manual, and the "Working with TEXT/IMAGE columns" section 
+elsewhere in this document.</p>
+</dd>
+</dl>
+
+<h1><a class="u" href="#___top" title="click to go to top of document" name="Controlling_DATETIME_output_formats">Controlling DATETIME output formats <img alt="^" src="Sybase.pm_files/up.gif"></a></h1>
+
+<p>By default DBD::Sybase will return <i>DATETIME</i> and <i>SMALLDATETIME</i> columns in the <i>Nov 15 1998 11:13AM</i> format. This can be changed via a private <b>syb_date_fmt()</b> method.</p>
+
+<p>The syntax is</p>
+
+<pre class="sh_perl sh_sourceCode">    <span class="sh_variable">$dbh</span><span class="sh_symbol">-&gt;</span><span class="sh_function">syb_date_fmt</span><span class="sh_symbol">(</span><span class="sh_variable">$fmt</span><span class="sh_symbol">);</span></pre>
+
+<p>where $fmt is a string representing the format that you want to apply.</p>
+
+<p>Note that this requires DBI 1.37 or later.</p>
+
+<p>The formats are based on Sybase's standard conversion routines. The following subset of available formats has been implemented:</p>
+
+<dl>
+<dt><a name="LONG">LONG</a></dt>
+
+<dd>
+<p>Nov 15 1998 11:30:11:496AM</p>
+
+</dd><dt><a name="LONGMS">LONGMS</a></dt>
+
+<dd>
+<p>New with ASE 15.5 - for bigtime/bigdatetime datatypes, includes microseconds:</p>
+
+<p>Apr 7 2010 10:40:33.532315PM</p>
+
+</dd><dt><a name="SHORT">SHORT</a></dt>
+
+<dd>
+<p>Nov 15 1998 11:30AM</p>
+
+</dd><dt><a name="DMY4_YYYY">DMY4_YYYY</a></dt>
+
+<dd>
+<p>15 Nov 1998</p>
+
+</dd><dt><a name="MDY1_YYYY">MDY1_YYYY</a></dt>
+
+<dd>
+<p>11/15/1998</p>
+
+</dd><dt><a name="DMY1_YYYY">DMY1_YYYY</a></dt>
+
+<dd>
+<p>15/11/1998</p>
+
+</dd><dt><a name="DMY2_YYYY">DMY2_YYYY</a></dt>
+
+<dd>
+<p>15.11.1998</p>
+
+</dd><dt><a name="YMD3_YYYY">YMD3_YYYY</a></dt>
+
+<dd>
+<p>19981115</p>
+
+</dd><dt><a name="HMS">HMS</a></dt>
+
+<dd>
+<p>11:30:11</p>
+
+</dd><dt><a name="ISO">ISO</a></dt>
+
+<dd>
+<p>2004-08-21 14:36:48.080</p>
+
+</dd><dt><a name="ISO_strict">ISO_strict</a></dt>
+
+<dd>
+<p>2004-08-21T14:36:48.080Z</p>
+
+<p>Note that Sybase has no concept of a timezone, so the trailing "Z" is
+ really not correct (assumes that the time is in UTC). However, there is
+ no guarantee that the client and the server run in the same timezone, 
+so assuming the timezone of the client isn't really a valid option 
+either.</p>
+</dd>
+</dl>
+
+<h1><a class="u" href="#___top" title="click to go to top of document" name="Retrieving_OUTPUT_parameters_from_stored_procedures">Retrieving OUTPUT parameters from stored procedures <img alt="^" src="Sybase.pm_files/up.gif"></a></h1>
+
+<p>Sybase lets you pass define <b>OUTPUT</b> parameters to stored procedures, which are a little like parameters passed by reference in C (or perl.)</p>
+
+<p>In Transact-SQL this is done like this</p>
+
+<pre class="sh_perl sh_sourceCode">   declare <span class="sh_variable">@id_value</span> <span class="sh_keyword">int</span><span class="sh_symbol">,</span> <span class="sh_variable">@id_name</span> <span class="sh_function">char</span><span class="sh_symbol">(</span><span class="sh_number">10</span><span class="sh_symbol">)</span>
+   <span class="sh_keyword">exec</span> my_proc <span class="sh_variable">@name</span> <span class="sh_symbol">=</span> <span class="sh_string">'a string'</span><span class="sh_symbol">,</span> <span class="sh_variable">@number</span> <span class="sh_symbol">=</span> <span class="sh_number">1234</span><span class="sh_symbol">,</span> <span class="sh_variable">@id</span> <span class="sh_symbol">=</span> <span class="sh_variable">@id_value</span> OUTPUT<span class="sh_symbol">,</span> <span class="sh_variable">@out_name</span> <span class="sh_symbol">=</span> <span class="sh_variable">@id_name</span> OUTPUT
+   <span class="sh_symbol">--</span> Now <span class="sh_variable">@id_value</span> <span class="sh_keyword">and</span> <span class="sh_variable">@id_name</span> are set to whatever <span class="sh_string">'my_proc'</span> set <span class="sh_variable">@id</span> <span class="sh_keyword">and</span> <span class="sh_variable">@out_name</span> to</pre>
+
+<p>So how can we get at @param using DBD::Sybase?</p>
+
+<p>If your stored procedure <b>only</b> returns <b>OUTPUT</b> parameters, then you can use this shorthand:</p>
+
+<pre class="sh_perl sh_sourceCode">    <span class="sh_variable">$sth</span> <span class="sh_symbol">=</span> <span class="sh_variable">$dbh</span><span class="sh_symbol">-&gt;</span><span class="sh_function">prepare</span><span class="sh_symbol">(</span><span class="sh_string">'...'</span><span class="sh_symbol">);</span>
+    <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span>execute<span class="sh_symbol">;</span>
+    <span class="sh_variable">@results</span> <span class="sh_symbol">=</span> <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span><span class="sh_function">syb_output_params</span><span class="sh_symbol">();</span></pre>
+
+<p>This will return an array for all the OUTPUT parameters in the proc 
+call, and will ignore any other results. The array will be undefined if 
+there are no OUTPUT params, or if the stored procedure failed for some 
+reason.</p>
+
+<p>The more generic way looks like this:</p>
+
+<pre class="sh_perl sh_sourceCode">   <span class="sh_variable">$sth</span> <span class="sh_symbol">=</span> <span class="sh_variable">$dbh</span><span class="sh_symbol">-&gt;</span><span class="sh_function">prepare</span><span class="sh_symbol">(</span><span class="sh_string">"declare \@id_value int, \@id_name</span>
+      <span class="sh_keyword">exec</span> my_proc <span class="sh_variable">@name</span> <span class="sh_symbol">=</span> <span class="sh_string">'a string'</span><span class="sh_symbol">,</span> <span class="sh_variable">@number</span> <span class="sh_symbol">=</span> <span class="sh_number">1234</span><span class="sh_symbol">,</span> <span class="sh_variable">@id</span> <span class="sh_symbol">=</span> <span class="sh_variable">@id_value</span> OUTPUT<span class="sh_symbol">,</span> <span class="sh_variable">@out_name</span> <span class="sh_symbol">=</span> <span class="sh_variable">@id_name</span> OUTPUT<span class="sh_string">");</span>
+   <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span>execute<span class="sh_symbol">;</span>
+   <span class="sh_cbracket">{</span>
+      <span class="sh_keyword">while</span><span class="sh_symbol">(</span><span class="sh_variable">$d</span> <span class="sh_symbol">=</span> <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span>fetch<span class="sh_symbol">)</span> <span class="sh_cbracket">{</span>
+         <span class="sh_keyword">if</span><span class="sh_symbol">(</span><span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span><span class="sh_cbracket">{</span>syb_result_type<span class="sh_cbracket">}</span> <span class="sh_symbol">==</span> <span class="sh_number">4042</span><span class="sh_symbol">)</span> <span class="sh_cbracket">{</span> <span class="sh_comment"># it's a PARAM result</span>
+            <span class="sh_variable">$id_value</span> <span class="sh_symbol">=</span> <span class="sh_variable">$d</span><span class="sh_symbol">-&gt;[</span><span class="sh_number">0</span><span class="sh_symbol">];</span>
+            <span class="sh_variable">$id_name</span>  <span class="sh_symbol">=</span> <span class="sh_variable">$d</span><span class="sh_symbol">-&gt;[</span><span class="sh_number">1</span><span class="sh_symbol">];</span>
+         <span class="sh_cbracket">}</span>
+      <span class="sh_cbracket">}</span>
+
+      <span class="sh_keyword">redo</span> <span class="sh_keyword">if</span> <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span><span class="sh_cbracket">{</span>syb_more_results<span class="sh_cbracket">}</span><span class="sh_symbol">;</span>
+   <span class="sh_cbracket">}</span></pre>
+
+<p>So the OUTPUT params are returned as one row in a special result set.</p>
+
+<h1><a class="u" href="#___top" title="click to go to top of document" name="Multiple_active_statements_on_one_$dbh">Multiple active statements on one $dbh <img alt="^" src="Sybase.pm_files/up.gif"></a></h1>
+
+<p>It is possible to open multiple active statements on a single 
+database handle. This is done by opening a new physical connection in 
+$dbh-&gt;prepare() if there is already an active statement handle for 
+this $dbh.</p>
+
+<p>This feature has been implemented to improve compatibility with other
+ drivers, but should not be used if you are coding directly to the 
+Sybase driver.</p>
+
+<p>The <code>syb_no_child_con</code> attribute controls whether this 
+feature is turned on. If it is FALSE (the default), then multiple 
+statement handles are supported. If it is TRUE then multiple statements 
+on the same database handle are disabled. Also see below for interaction
+ with AutoCommit.</p>
+
+<p>If AutoCommit is <b>OFF</b> then multiple statement handles on a single $dbh is <b>NOT</b>
+ supported. This is to avoid various deadlock problems that can crop up 
+in this situation, and because you will not get real transactional 
+integrity using multiple statement handles simultaneously as these in 
+reality refer to different physical connections.</p>
+
+<h1><a class="u" href="#___top" title="click to go to top of document" name="Working_with_IMAGE_and_TEXT_columns">Working with IMAGE and TEXT columns <img alt="^" src="Sybase.pm_files/up.gif"></a></h1>
+
+<p>DBD::Sybase can store and retrieve IMAGE or TEXT data (aka "blob" data) via standard SQL statements. The <b>LongReadLen</b> handle attribute controls the maximum size of IMAGE or TEXT data being returned for each data element.</p>
+
+<p>When using standard SQL the default for IMAGE data is to be converted to a hex string, but you can use the <i>syb_binary_images</i> handle attribute to change this behaviour. Alternatively you can use something like</p>
+
+<pre class="sh_perl sh_sourceCode">    <span class="sh_variable">$binary</span> <span class="sh_symbol">=</span> <span class="sh_keyword">pack</span><span class="sh_symbol">(</span><span class="sh_string">"H*"</span><span class="sh_symbol">,</span> <span class="sh_variable">$hex_string</span><span class="sh_symbol">);</span></pre>
+
+<p>to do the conversion.</p>
+
+<p>IMAGE and TEXT datatypes can <b>not</b> be passed as parameters using
+ ?-style placeholders, and placeholders can't refer to IMAGE or TEXT 
+columns (this is a limitation of the TDS protocol used by Sybase, not a 
+DBD::Sybase limitation.)</p>
+
+<p>There is an alternative way to access and update IMAGE/TEXT data 
+using the natice OpenClient API. This is done via $h-&gt;func() calls, 
+and is, unfortunately, a little convoluted.</p>
+
+<h2><a class="u" href="#___top" title="click to go to top of document" name="Handling_IMAGE/TEXT_data_with_syb_ct_get_data()/syb_ct_send_data()">Handling IMAGE/TEXT data with syb_ct_get_data()/syb_ct_send_data()</a></h2>
+
+<p>With DBI 1.37 and later you can call all of these ct_xxx() calls 
+directly as statement handle methods by prefixing them with syb_, so for
+ example</p>
+
+<pre class="sh_perl sh_sourceCode">    <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span><span class="sh_function">func</span><span class="sh_symbol">(</span><span class="sh_variable">$col</span><span class="sh_symbol">,</span> <span class="sh_variable">$dataref</span><span class="sh_symbol">,</span> <span class="sh_variable">$numbytes</span><span class="sh_symbol">,</span> <span class="sh_string">'ct_fetch_data'</span><span class="sh_symbol">);</span></pre>
+
+<p>becomes</p>
+
+<pre class="sh_perl sh_sourceCode">    <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span><span class="sh_function">syb_ct_fetch_data</span><span class="sh_symbol">(</span><span class="sh_variable">$col</span><span class="sh_symbol">,</span> <span class="sh_variable">$dataref</span><span class="sh_symbol">,</span> <span class="sh_variable">$numbytes</span><span class="sh_symbol">);</span></pre>
+
+<dl>
+<dt><a name="len"></a><a name="$len_=_ct_fetch_data($col,_$dataref,_$numbytes)">$len = ct_fetch_data($col, $dataref, $numbytes)</a></dt>
+
+<dd>
+<p>The ct_get_data() call allows you to fetch IMAGE/TEXT data in raw 
+format, either in one piece or in chunks. To use this function you must 
+set the <i>syb_no_bind_blob</i> statement handle to <i>TRUE</i>.</p>
+
+<p>ct_get_data() takes 3 parameters: The column number (starting at 1) 
+of the query, a scalar ref and a byte count. If the byte count is 0 then
+ we read as many bytes as possible.</p>
+
+<p>Note that the IMAGE/TEXT column <b>must</b> be <b>last</b> in the select list for this to work.</p>
+
+<p>The call sequence is:</p>
+
+<pre class="sh_perl sh_sourceCode">    <span class="sh_variable">$sth</span> <span class="sh_symbol">=</span> <span class="sh_variable">$dbh</span><span class="sh_symbol">-&gt;</span><span class="sh_function">prepare</span><span class="sh_symbol">(</span><span class="sh_string">"select id, img from some_table where id = 1"</span><span class="sh_symbol">);</span>
+    <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span><span class="sh_cbracket">{</span>syb_no_bind_blob<span class="sh_cbracket">}</span> <span class="sh_symbol">=</span> <span class="sh_number">1</span><span class="sh_symbol">;</span>
+    <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span>execute<span class="sh_symbol">;</span>
+    <span class="sh_keyword">while</span><span class="sh_symbol">(</span><span class="sh_variable">$d</span> <span class="sh_symbol">=</span> <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span>fetchrow_arrayref<span class="sh_symbol">)</span> <span class="sh_cbracket">{</span>
+       <span class="sh_comment"># The data is in the second column</span>
+       <span class="sh_variable">$len</span> <span class="sh_symbol">=</span> <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span><span class="sh_function">syb_ct_get_data</span><span class="sh_symbol">(</span><span class="sh_number">2</span><span class="sh_symbol">,</span> <span class="sh_symbol">\</span><span class="sh_variable">$img</span><span class="sh_symbol">,</span> <span class="sh_number">0</span><span class="sh_symbol">);</span>
+       <span class="sh_comment"># with DBI 1.33 and earlier, this would be</span>
+       <span class="sh_comment"># $len = $sth-&gt;func(2, \$img, 0, 'ct_get_data');</span>
+    <span class="sh_cbracket">}</span></pre>
+
+<p>ct_get_data() returns the number of bytes that were effectively 
+fetched, so that when fetching chunks you can do something like this:</p>
+
+<pre class="sh_perl sh_sourceCode">   <span class="sh_keyword">while</span><span class="sh_symbol">(</span><span class="sh_number">1</span><span class="sh_symbol">)</span> <span class="sh_cbracket">{</span>
+      <span class="sh_variable">$len</span> <span class="sh_symbol">=</span> <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span><span class="sh_function">syb_ct_get_data</span><span class="sh_symbol">(</span><span class="sh_number">2</span><span class="sh_symbol">,</span> <span class="sh_variable">$imgchunk</span><span class="sh_symbol">,</span> <span class="sh_number">1024</span><span class="sh_symbol">);</span>
+      <span class="sh_symbol">...</span> <span class="sh_keyword">do</span> something with the <span class="sh_variable">$imgchunk</span> <span class="sh_symbol">...</span>
+      <span class="sh_keyword">last</span> <span class="sh_keyword">if</span> <span class="sh_variable">$len</span> <span class="sh_symbol">!=</span> <span class="sh_number">1024</span><span class="sh_symbol">;</span>
+   <span class="sh_cbracket">}</span></pre>
+
+<p>To explain further: Sybase stores IMAGE/TEXT data separately from 
+normal table data, in a chain of pagesize blocks (a Sybase database page
+ is defined at the server level, and can be 2k, 4k, 8k or 16k in size.) 
+To update an IMAGE/TEXT column Sybase needs to find the head of this 
+chain, which is known as the "text pointer". As there is no <i>where</i> clause when the ct_send_data() API is used we need to retrieve the <i>text pointer</i>
+ for the correct data item first, which is done via the 
+ct_data_info(CS_GET) call. Subsequent ct_send_data() calls will then 
+know which data item to update.</p>
+
+</dd><dt><a name="status"></a><a name="$status_=_ct_data_info($action,_$column,_$attr)">$status = ct_data_info($action, $column, $attr)</a></dt>
+
+<dd>
+<p>ct_data_info() is used to fetch or update the CS_IODESC structure for
+ the IMAGE/TEXT data item that you wish to update. $action should be one
+ of "CS_SET" or "CS_GET", $column is the column number of the active 
+select statement (ignored for a CS_SET operation) and $attr is a hash 
+ref used to set the values in the struct.</p>
+
+<p>ct_data_info() must be first called with CS_GET to fetch the 
+CS_IODESC structure for the IMAGE/TEXT data item that you wish to 
+update. Then you must update the value of the <i>total_txtlen</i> structure element to the length (in bytes) of the IMAGE/TEXT data that you are going to insert, and optionally set the <i>log_on_update</i> to <b>TRUE</b> to enable full logging of the operation.</p>
+
+<p>ct_data_info(CS_GET) will <i>fail</i> if the IMAGE/TEXT data for 
+which the CS_IODESC is being fetched is NULL. If you have a NULL value 
+that needs updating you must first update it to some non-NULL value (for
+ example an empty string) using standard SQL before you can retrieve the
+ CS_IODESC entry. This actually makes sense because as long as the data 
+item is NULL there is <b>no</b> <i>text pointer</i> and no TEXT page chain for that item.</p>
+
+<p>See the ct_send_data() entry below for an example.</p>
+
+</dd><dt><a name="ct_prepare_send"></a><a name="ct_prepare_send()">ct_prepare_send()</a></dt>
+
+<dd>
+<p>ct_prepare_send() must be called to initialize a IMAGE/TEXT write operation. See the ct_send_data() entry below for an example.</p>
+
+</dd><dt><a name="ct_finish_send"></a><a name="ct_finish_send()">ct_finish_send()</a></dt>
+
+<dd>
+<p>ct_finish_send() is called to finish/commit an IMAGE/TEXT write operation. See the ct_send_data() entry below for an example.</p>
+
+</dd><dt><a name="ct_send_data"></a><a name="ct_send_data($image,_$bytes)">ct_send_data($image, $bytes)</a></dt>
+
+<dd>
+<p>Send $bytes bytes of $image to the database. The request must have 
+been set up via ct_prepare_send() and ct_data_info() for this to work. 
+ct_send_data() returns <b>TRUE</b> on success, and <b>FALSE</b> on failure.</p>
+
+<p>In this example, we wish to update the data in the <i>img</i> column where the <i>id</i> column is 1. We assume that DBI is at version 1.37 or later and use the direct method calls:</p>
+
+<pre class="sh_perl sh_sourceCode">  <span class="sh_comment"># first we need to find the CS_IODESC data for the data</span>
+  <span class="sh_variable">$sth</span> <span class="sh_symbol">=</span> <span class="sh_variable">$dbh</span><span class="sh_symbol">-&gt;</span><span class="sh_function">prepare</span><span class="sh_symbol">(</span><span class="sh_string">"select img from imgtable where id = 1"</span><span class="sh_symbol">);</span>
+  <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span>execute<span class="sh_symbol">;</span>
+  <span class="sh_keyword">while</span><span class="sh_symbol">(</span><span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span>fetch<span class="sh_symbol">)</span> <span class="sh_cbracket">{</span>    <span class="sh_comment"># don't care about the data!</span>
+      <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span><span class="sh_function">syb_ct_data_info</span><span class="sh_symbol">(</span><span class="sh_string">'CS_GET'</span><span class="sh_symbol">,</span> <span class="sh_number">1</span><span class="sh_symbol">);</span>
+  <span class="sh_cbracket">}</span>
+
+  <span class="sh_comment"># OK - we have the CS_IODESC values, so do the update:</span>
+  <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span><span class="sh_function">syb_ct_prepare_send</span><span class="sh_symbol">();</span>
+  <span class="sh_comment"># Set the size of the new data item (that we are inserting), and make</span>
+  <span class="sh_comment"># the operation unlogged</span>
+  <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span><span class="sh_function">syb_ct_data_info</span><span class="sh_symbol">(</span><span class="sh_string">'CS_SET'</span><span class="sh_symbol">,</span> <span class="sh_number">1</span><span class="sh_symbol">,</span> <span class="sh_cbracket">{</span>total_txtlen <span class="sh_symbol">=&gt;</span> <span class="sh_keyword">length</span><span class="sh_symbol">(</span><span class="sh_variable">$image</span><span class="sh_symbol">),</span> log_on_update <span class="sh_symbol">=&gt;</span> <span class="sh_number">0</span><span class="sh_cbracket">}</span><span class="sh_symbol">);</span>
+  <span class="sh_comment"># now transfer the data (in a single chunk, this time)</span>
+  <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span><span class="sh_function">syb_ct_send_data</span><span class="sh_symbol">(</span><span class="sh_variable">$image</span><span class="sh_symbol">,</span> <span class="sh_keyword">length</span><span class="sh_symbol">(</span><span class="sh_variable">$image</span><span class="sh_symbol">));</span>
+  <span class="sh_comment"># commit the operation</span>
+  <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span><span class="sh_function">syb_ct_finish_send</span><span class="sh_symbol">();</span></pre>
+
+<p>The ct_send_data() call can also transfer the data in chunks, however
+ you must know the total size of the image before you start the insert. 
+For example:</p>
+
+<pre class="sh_perl sh_sourceCode">  <span class="sh_comment"># update a database entry with a new version of a file:</span>
+  <span class="sh_keyword">my</span> <span class="sh_variable">$size</span> <span class="sh_symbol">=</span> <span class="sh_symbol">-</span><span class="sh_keyword">s</span> <span class="sh_variable">$file</span><span class="sh_symbol">;</span>
+  <span class="sh_comment"># first we need to find the CS_IODESC data for the data</span>
+  <span class="sh_variable">$sth</span> <span class="sh_symbol">=</span> <span class="sh_variable">$dbh</span><span class="sh_symbol">-&gt;</span><span class="sh_function">prepare</span><span class="sh_symbol">(</span><span class="sh_string">"select img from imgtable where id = 1"</span><span class="sh_symbol">);</span>
+  <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span>execute<span class="sh_symbol">;</span>
+  <span class="sh_keyword">while</span><span class="sh_symbol">(</span><span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span>fetch<span class="sh_symbol">)</span> <span class="sh_cbracket">{</span>    <span class="sh_comment"># don't care about the data!</span>
+      <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span><span class="sh_function">syb_ct_data_info</span><span class="sh_symbol">(</span><span class="sh_string">'CS_GET'</span><span class="sh_symbol">,</span> <span class="sh_number">1</span><span class="sh_symbol">);</span>
+  <span class="sh_cbracket">}</span>
+
+  <span class="sh_comment"># OK - we have the CS_IODESC values, so do the update:</span>
+  <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span><span class="sh_function">syb_ct_prepare_send</span><span class="sh_symbol">();</span>
+  <span class="sh_comment"># Set the size of the new data item (that we are inserting), and make</span>
+  <span class="sh_comment"># the operation unlogged</span>
+  <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span><span class="sh_function">syb_ct_data_info</span><span class="sh_symbol">(</span><span class="sh_string">'CS_SET'</span><span class="sh_symbol">,</span> <span class="sh_number">1</span><span class="sh_symbol">,</span> <span class="sh_cbracket">{</span>total_txtlen <span class="sh_symbol">=&gt;</span> <span class="sh_variable">$size</span><span class="sh_symbol">,</span> log_on_update <span class="sh_symbol">=&gt;</span> <span class="sh_number">0</span><span class="sh_cbracket">}</span><span class="sh_symbol">);</span>
+
+  <span class="sh_comment"># open the file, and store it in the db in 1024 byte chunks.</span>
+  <span class="sh_keyword">open</span><span class="sh_symbol">(</span>IN<span class="sh_symbol">,</span> <span class="sh_variable">$file</span><span class="sh_symbol">)</span> <span class="sh_symbol">||</span> <span class="sh_keyword">die</span> <span class="sh_string">"Can't open $file: $!"</span><span class="sh_symbol">;</span>
+  <span class="sh_keyword">while</span><span class="sh_symbol">(</span><span class="sh_variable">$size</span><span class="sh_symbol">)</span> <span class="sh_cbracket">{</span>
+      <span class="sh_variable">$to_read</span> <span class="sh_symbol">=</span> <span class="sh_variable">$size</span> <span class="sh_symbol">&gt;</span> <span class="sh_number">1024</span> <span class="sh_symbol">?</span> <span class="sh_number">1024</span> <span class="sh_symbol">:</span> <span class="sh_variable">$size</span><span class="sh_symbol">;</span>
+      <span class="sh_variable">$bytesread</span> <span class="sh_symbol">=</span> <span class="sh_keyword">read</span><span class="sh_symbol">(</span>IN<span class="sh_symbol">,</span> <span class="sh_variable">$buff</span><span class="sh_symbol">,</span> <span class="sh_variable">$to_read</span><span class="sh_symbol">);</span>
+      <span class="sh_variable">$size</span> <span class="sh_symbol">-=</span> <span class="sh_variable">$bytesread</span><span class="sh_symbol">;</span>
+
+      <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span><span class="sh_function">syb_ct_send_data</span><span class="sh_symbol">(</span><span class="sh_variable">$buff</span><span class="sh_symbol">,</span> <span class="sh_variable">$bytesread</span><span class="sh_symbol">);</span>
+  <span class="sh_cbracket">}</span>
+  <span class="sh_keyword">close</span><span class="sh_symbol">(</span>IN<span class="sh_symbol">);</span>
+  <span class="sh_comment"># commit the operation</span>
+  <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span><span class="sh_function">syb_ct_finish_send</span><span class="sh_symbol">();</span></pre>
+</dd>
+</dl>
+
+<h1><a class="u" href="#___top" title="click to go to top of document" name="AutoCommit,_Transactions_and_Transact-SQL">AutoCommit, Transactions and Transact-SQL <img alt="^" src="Sybase.pm_files/up.gif"></a></h1>
+
+<p>When $h-&gt;{AutoCommit} is <i>off</i> all data modification SQL statements that you issue (insert/update/delete) will only take effect if you call $dbh-&gt;commit.</p>
+
+<p>DBD::Sybase implements this via two distinct methods, depending on 
+the setting of the $h-&gt;{syb_chained_txn} attribute and the version of
+ the server that is being accessed.</p>
+
+<p>If $h-&gt;{syb_chained_txn} is <i>off</i>, then the DBD::Sybase driver will send a <b>BEGIN TRAN</b>
+ before the first $dbh-&gt;prepare(), and after each call to 
+$dbh-&gt;commit() or $dbh-&gt;rollback(). This works fine, but will 
+cause any SQL that contains any <i>CREATE TABLE</i> (or other DDL) statements to fail. These <i>CREATE TABLE</i> statements can be burried in a stored procedure somewhere (for example, <code>sp_helprotect</code> creates two temp tables when it is run). You <i>can</i> get around this limit by setting the <code>ddl in tran</code> option (at the database level, via <code>sp_dboption</code>.)
+ You should be aware that this can have serious effects on performance 
+as this causes locks to be held on certain system tables for the 
+duration of the transaction.</p>
+
+<p>If $h-&gt;{syb_chained_txn} is <i>on</i>, then DBD::Sybase sets the <i>CHAINED</i>
+ option, which tells Sybase not to commit anything automatically. Again,
+ you will need to call $dbh-&gt;commit() to make any changes to the data
+ permanent.</p>
+
+<h1><a class="u" href="#___top" title="click to go to top of document" name="Behavior_of_$dbh-&gt;last_insert_id">Behavior of $dbh-&gt;last_insert_id <img alt="^" src="Sybase.pm_files/up.gif"></a></h1>
+
+<p>This version of DBD::Sybase includes support for the last_insert_id() call, with the following caveats:</p>
+
+<p>The last_insert_id() call is simply a wrapper around a "select 
+@@identity" query. To be successful (i.e. to return the correct value) 
+this must be executed on the same connection as the INSERT that 
+generated the new IDENTITY value. Therefore the statement handle that 
+was used to perform the insert <b>must</b> have been closed/freed before
+ last_insert_id() can be called. Otherwise last_insert_id() will be 
+forced to open a different connection to perform the query, and will 
+return an invalid value (usually in this case it will return 0).</p>
+
+<p>last_insert_id() ignores any parameters passed to it, and will NOT 
+return the last @@identity value generated in the case where 
+placeholders were used, or where the insert was encapsulated in a stored
+ procedure.</p>
+
+<h1><a class="u" href="#___top" title="click to go to top of document" name="Using_?_Placeholders_&amp;_bind_parameters_to_$sth-&gt;execute">Using ? Placeholders &amp; bind parameters to $sth-&gt;execute <img alt="^" src="Sybase.pm_files/up.gif"></a></h1>
+
+<p>DBD::Sybase supports the use of ? placeholders in SQL statements as 
+long as the underlying library and database engine supports it. It does 
+this by using what Sybase calls <i>Dynamic SQL</i>. The ? placeholders allow you to write something like:</p>
+
+<pre class="sh_perl sh_sourceCode">        <span class="sh_variable">$sth</span> <span class="sh_symbol">=</span> <span class="sh_variable">$dbh</span><span class="sh_symbol">-&gt;</span><span class="sh_function">prepare</span><span class="sh_symbol">(</span><span class="sh_string">"select * from employee where empno = ?"</span><span class="sh_symbol">);</span>
+
+        <span class="sh_comment"># Retrieve rows from employee where empno == 1024:</span>
+        <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span><span class="sh_function">execute</span><span class="sh_symbol">(</span><span class="sh_number">1024</span><span class="sh_symbol">);</span>
+        <span class="sh_keyword">while</span><span class="sh_symbol">(</span><span class="sh_variable">$data</span> <span class="sh_symbol">=</span> <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span>fetch<span class="sh_symbol">)</span> <span class="sh_cbracket">{</span>
+            <span class="sh_keyword">print</span> <span class="sh_string">"@$data\n"</span><span class="sh_symbol">;</span>
+        <span class="sh_cbracket">}</span>
+
+       <span class="sh_comment"># Now get rows where empno = 2000:</span>
+        
+        <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span><span class="sh_function">execute</span><span class="sh_symbol">(</span><span class="sh_number">2000</span><span class="sh_symbol">);</span>
+        <span class="sh_keyword">while</span><span class="sh_symbol">(</span><span class="sh_variable">$data</span> <span class="sh_symbol">=</span> <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span>fetch<span class="sh_symbol">)</span> <span class="sh_cbracket">{</span>
+            <span class="sh_keyword">print</span> <span class="sh_string">"@$data\n"</span><span class="sh_symbol">;</span>
+        <span class="sh_cbracket">}</span></pre>
+
+<p>When you use ? placeholders Sybase goes and creates a temporary 
+stored procedure that corresponds to your SQL statement. You then pass 
+variables to $sth-&gt;execute or $dbh-&gt;do, which get inserted in the 
+query, and any rows are returned.</p>
+
+<p>DBD::Sybase uses the underlying Sybase API calls to handle ?-style 
+placeholders. For select/insert/update/delete statements DBD::Sybase 
+calls the ct_dynamic() family of Client Library functions, which gives 
+DBD::Sybase data type information for each parameter to the query.</p>
+
+<p>You can only use ?-style placeholders for statements that return a 
+single result set, and the ? placeholders can only appear in a <b>WHERE</b> clause, in the <b>SET</b> clause of an <b>UPDATE</b> statement, or in the <b>VALUES</b> list of an <b>INSERT</b> statement.</p>
+
+<p>The DBI docs mention the following regarding NULL values and placeholders:</p>
+
+<blockquote>
+<pre class="sh_perl sh_sourceCode">       Binding an `<span class="sh_keyword">undef</span><span class="sh_string">' (NULL) to the placeholder will not</span>
+       <span class="sh_keyword">select</span> rows which have a NULL `product_code<span class="sh_string">'! Refer to the</span>
+       SQL manual <span class="sh_keyword">for</span> your database engine or any SQL book <span class="sh_keyword">for</span>
+       the reasons <span class="sh_keyword">for</span> this<span class="sh_symbol">.</span>  To explicitly <span class="sh_keyword">select</span> NULLs you have
+       to say <span class="sh_string">"`WHERE product_code IS NULL'"</span> <span class="sh_keyword">and</span> to make that
+       general you have to say<span class="sh_symbol">:</span>
+
+         <span class="sh_symbol">...</span> <span class="sh_function">WHERE</span> <span class="sh_symbol">(</span>product_code <span class="sh_symbol">=</span> <span class="sh_symbol">?</span> <span class="sh_function">OR</span> <span class="sh_symbol">(?</span> IS NULL AND product_code IS NULL<span class="sh_symbol">))</span>
+
+       <span class="sh_keyword">and</span> bind the same value to both placeholders<span class="sh_symbol">.</span></pre>
+</blockquote>
+
+<p>This will <i>not</i> work with a Sybase database server. If you attempt the above construct you will get the following error:</p>
+
+<blockquote>
+<p>The datatype of a parameter marker used in the dynamic prepare statement could not be resolved.</p>
+</blockquote>
+
+<p>The specific problem here is that when using ? placeholders the 
+prepare() operation is sent to the database server for parameter 
+resoltion. This extracts the datatypes for each of the placeholders. 
+Unfortunately the <code>? is null</code> construct doesn't tie the ? 
+placeholder with an existing table column, so the database server can't 
+find the data type. As this entire operation happens inside the Sybase 
+libraries there is no easy way for DBD::Sybase to work around it.</p>
+
+<p>Note that Sybase will normally handle the <code>foo = NULL</code> construct the same way that other systems handle <code>foo is NULL</code>,
+ so the convoluted construct that is described above is not necessary to
+ obtain the correct results when querying a Sybase database.</p>
+
+<p>The underlying API does not support ?-style placeholders for stored procedures, but see the section on titled <b>Stored Procedures and Placeholders</b> elsewhere in this document.</p>
+
+<p>?-style placeholders can <b>NOT</b> be used to pass TEXT or IMAGE data items to the server. This is a limitation of the TDS protocol, not of DBD::Sybase.</p>
+
+<p>There is also a performance issue: OpenClient creates stored 
+procedures in tempdb for each prepare() call that includes ? 
+placeholders. Creating these objects requires updating system tables in 
+the tempdb database, and can therefore create a performance hotspot if a
+ lot of prepare() statements from multiple clients are executed 
+simultaneously. This problem has been corrected for Sybase 11.9.x and 
+later servers, as they create "lightweight" temporary stored procs which
+ are held in the server memory cache and don't affect the system tables 
+at all.</p>
+
+<p>In general however I find that if your application is going to run 
+against Sybase it is better to write ad-hoc stored procedures rather 
+than use the ? placeholders in embedded SQL.</p>
+
+<p>Out of curiosity I did some simple timings to see what the overhead 
+of doing a prepare with ? placehoders is vs. a straight SQL prepare and 
+vs. a stored procedure prepare. Against an 11.0.3.3 server (linux) the 
+placeholder prepare is significantly slower, and you need to do ~30 
+execute() calls on the prepared statement to make up for the overhead. 
+Against a 12.0 server (solaris) however the situation was very 
+different, with placeholder prepare() calls <i>slightly</i> faster than straight SQL prepare(). This is something that I <i>really</i> don't understand, but the numbers were pretty clear.</p>
+
+<p>In all cases stored proc prepare() calls were <i>clearly</i> faster, and consistently so.</p>
+
+<p>This test did not try to gauge concurrency issues, however.</p>
+
+<p>It is not possible to retrieve the last <i>IDENTITY</i> value after 
+an insert done with ?-style placeholders. This is a Sybase 
+limitation/bug, not a DBD::Sybase problem. For example, assuming table <i>foo</i> has an identity column:</p>
+
+<pre class="sh_perl sh_sourceCode">  <span class="sh_variable">$dbh</span><span class="sh_symbol">-&gt;</span><span class="sh_keyword">do</span><span class="sh_symbol">(</span><span class="sh_string">"insert foo(col1, col2) values(?, ?)"</span><span class="sh_symbol">,</span> <span class="sh_keyword">undef</span><span class="sh_symbol">,</span> <span class="sh_string">"string1"</span><span class="sh_symbol">,</span> <span class="sh_string">"string2"</span><span class="sh_symbol">);</span>
+  <span class="sh_variable">$sth</span> <span class="sh_symbol">=</span> <span class="sh_variable">$dbh</span><span class="sh_symbol">-&gt;</span><span class="sh_function">prepare</span><span class="sh_symbol">(</span><span class="sh_string">'select @@identity'</span><span class="sh_symbol">)</span> 
+    <span class="sh_symbol">||</span> <span class="sh_keyword">die</span> <span class="sh_string">"Can't prepare the SQL statement: $DBI::errstr"</span><span class="sh_symbol">;</span>
+  <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span>execute <span class="sh_symbol">||</span> <span class="sh_keyword">die</span> <span class="sh_string">"Can't execute the SQL statement: $DBI::errstr"</span><span class="sh_symbol">;</span>
+
+  <span class="sh_comment">#Get the data back.</span>
+  <span class="sh_keyword">while</span> <span class="sh_symbol">(</span><span class="sh_keyword">my</span> <span class="sh_variable">$row</span> <span class="sh_symbol">=</span> <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span><span class="sh_function">fetchrow_arrayref</span><span class="sh_symbol">())</span> <span class="sh_cbracket">{</span>
+    <span class="sh_keyword">print</span> <span class="sh_string">"IDENTITY value = $row-&gt;[0]\n"</span><span class="sh_symbol">;</span>
+  <span class="sh_cbracket">}</span></pre>
+
+<p>will always return an identity value of 0, which is obviously 
+incorrect. This behaviour is due to the fact that the handling of 
+?-style placeholders is implemented using temporary stored procedures in
+ Sybase, and the value of <code>@@identity</code> is reset when the stored procedure has executed. Using an explicit stored procedure to do the insert and trying to retrieve <code>@@identity</code> after it has executed results in the same behaviour.</p>
+
+<p>Please see the discussion on Dynamic SQL in the OpenClient C Programmer's Guide for details. The guide is available on-line at <a href="http://sybooks.sybase.com/" class="podlinkurl">http://sybooks.sybase.com/</a></p>
+
+<h1><a class="u" href="#___top" title="click to go to top of document" name="Calling_Stored_Procedures">Calling Stored Procedures <img alt="^" src="Sybase.pm_files/up.gif"></a></h1>
+
+<p>DBD::Sybase handles stored procedures in the same way as any other 
+Transact-SQL statement. The only real difference is that Sybase stored 
+procedures always return an extra result set with the <i>return status</i> from the proc which corresponds to the <i>return</i>
+ statement in the stored procedure code. This result set with a single 
+row is always returned last and has a result type of CS_STATUS_RESULT 
+(4043).</p>
+
+<p>By default this result set is returned like any other, but you can 
+ask DBD::Sybase to process it under the covers via the 
+$h-&gt;{syb_do_proc_status} attribute. If this attribute is set then 
+DBD::Sybase will process the CS_STATUS_RESULT result set itself, place 
+the return status value in $sth-&gt;{syb_proc_status}, and possibly 
+raise an error if the result set is different from 0. Note that a non-0 
+return status will <b>NOT</b> cause $sth-&gt;execute to return a failure
+ code if the proc has at least one other result set that returned rows 
+(reason: the rows are returned and fetched before the return status is 
+seen).</p>
+
+<h2><a class="u" href="#___top" title="click to go to top of document" name="Stored_Procedures_and_Placeholders">Stored Procedures and Placeholders</a></h2>
+
+<p>DBD::Sybase has the ability to use ?-style placeholders as parameters
+ to stored proc calls. The requirements are that the stored procedure 
+call be initiated with an "exec" and that it be the only statement in 
+the batch that is being prepared():</p>
+
+<p>For example, this prepares a stored proc call with named parameters:</p>
+
+<pre class="sh_perl sh_sourceCode">    <span class="sh_keyword">my</span> <span class="sh_variable">$sth</span> <span class="sh_symbol">=</span> <span class="sh_variable">$dbh</span><span class="sh_symbol">-&gt;</span><span class="sh_function">prepare</span><span class="sh_symbol">(</span><span class="sh_string">"exec my_proc \@p1 = ?, \@p2 = ?"</span><span class="sh_symbol">);</span>
+    <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span><span class="sh_function">execute</span><span class="sh_symbol">(</span><span class="sh_string">'one'</span><span class="sh_symbol">,</span> <span class="sh_string">'two'</span><span class="sh_symbol">);</span></pre>
+
+<p>You can also use positional parameters:</p>
+
+<pre class="sh_perl sh_sourceCode">    <span class="sh_keyword">my</span> <span class="sh_variable">$sth</span> <span class="sh_symbol">=</span> <span class="sh_variable">$dbh</span><span class="sh_symbol">-&gt;</span><span class="sh_function">prepare</span><span class="sh_symbol">(</span><span class="sh_string">"exec my_proc ?, ?"</span><span class="sh_symbol">);</span>
+    <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span><span class="sh_function">execute</span><span class="sh_symbol">(</span><span class="sh_string">'one'</span><span class="sh_symbol">,</span> <span class="sh_string">'two'</span><span class="sh_symbol">);</span></pre>
+
+<p>You may <i>not</i> mix positional and named parameter in the same prepare.</p>
+
+<p>You <i>can't</i> mix placeholder parameters and hard coded parameters. For example</p>
+
+<pre class="sh_perl sh_sourceCode">    <span class="sh_variable">$sth</span> <span class="sh_symbol">=</span> <span class="sh_variable">$dbh</span><span class="sh_symbol">-&gt;</span><span class="sh_function">prepare</span><span class="sh_symbol">(</span><span class="sh_string">"exec my_proc \@p1 = 1, \@p2 = ?"</span><span class="sh_symbol">);</span></pre>
+
+<p>will <i>not</i> work - because the @p1 parameter isn't parsed correctly and won't be sent to the server.</p>
+
+<p>You can specify <i>OUTPUT</i> parameters in the usual way, but you can <b>NOT</b> use bind_param_inout() to get the output result - instead you have to call fetch() and/or $sth-&gt;func('syb_output_params'):</p>
+
+<pre class="sh_perl sh_sourceCode">    <span class="sh_keyword">my</span> <span class="sh_variable">$sth</span> <span class="sh_symbol">=</span> <span class="sh_variable">$dbh</span><span class="sh_symbol">-&gt;</span><span class="sh_function">prepare</span><span class="sh_symbol">(</span><span class="sh_string">"exec my_proc \@p1 = ?, \@p2 = ?, \@p3 = ? OUTPUT "</span><span class="sh_symbol">);</span>
+    <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span><span class="sh_function">execute</span><span class="sh_symbol">(</span><span class="sh_string">'one'</span><span class="sh_symbol">,</span> <span class="sh_string">'two'</span><span class="sh_symbol">,</span> <span class="sh_string">'three'</span><span class="sh_symbol">);</span>
+    <span class="sh_keyword">my</span> <span class="sh_symbol">(</span><span class="sh_variable">@data</span><span class="sh_symbol">)</span> <span class="sh_symbol">=</span> <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span><span class="sh_function">syb_output_params</span><span class="sh_symbol">();</span></pre>
+
+<p>DBD::Sybase does not attempt to figure out the correct parameter type
+ for each parameter (it would be possible to do this for most cases, but
+ there are enough exceptions that I preferred to avoid the issue for the
+ time being). DBD::Sybase defaults all the parameters to SQL_CHAR, and 
+you have to use bind_param() with an explicit type value to set this to 
+something different. The type is then remembered, so you only need to 
+use the explicit call once for each parameter:</p>
+
+<pre class="sh_perl sh_sourceCode">    <span class="sh_keyword">my</span> <span class="sh_variable">$sth</span> <span class="sh_symbol">=</span> <span class="sh_variable">$dbh</span><span class="sh_symbol">-&gt;</span><span class="sh_function">prepare</span><span class="sh_symbol">(</span><span class="sh_string">"exec my_proc \@p1 = ?, \@p2 = ?"</span><span class="sh_symbol">);</span>
+    <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span><span class="sh_function">bind_param</span><span class="sh_symbol">(</span><span class="sh_number">1</span><span class="sh_symbol">,</span> <span class="sh_string">'one'</span><span class="sh_symbol">,</span> SQL_CHAR<span class="sh_symbol">);</span>
+    <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span><span class="sh_function">bind_param</span><span class="sh_symbol">(</span><span class="sh_number">2</span><span class="sh_symbol">,</span> <span class="sh_number">2.34</span><span class="sh_symbol">,</span> SQL_FLOAT<span class="sh_symbol">);</span>
+    <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span>execute<span class="sh_symbol">;</span>
+    <span class="sh_symbol">....</span>
+    <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span><span class="sh_function">execute</span><span class="sh_symbol">(</span><span class="sh_string">'two'</span><span class="sh_symbol">,</span> <span class="sh_number">3.456</span><span class="sh_symbol">);</span>
+    etc<span class="sh_symbol">...</span></pre>
+
+<p>Note that once a type has been defined for a parameter you can't change it.</p>
+
+<p>When binding SQL_NUMERIC or SQL_DECIMAL data you may get fatal 
+conversion errors if the scale or the precision exceeds the size of the 
+target parameter definition.</p>
+
+<p>For example, consider the following stored proc definition:</p>
+
+<pre class="sh_perl sh_sourceCode">    declare proc my_proc <span class="sh_variable">@p1</span> <span class="sh_function">numeric</span><span class="sh_symbol">(</span><span class="sh_number">5</span><span class="sh_symbol">,</span><span class="sh_number">2</span><span class="sh_symbol">)</span> as<span class="sh_symbol">...</span></pre>
+
+<p>and the following prepare/execute snippet:</p>
+
+<pre class="sh_perl sh_sourceCode">    <span class="sh_keyword">my</span> <span class="sh_variable">$sth</span> <span class="sh_symbol">=</span> <span class="sh_variable">$dbh</span><span class="sh_symbol">-&gt;</span><span class="sh_function">prepare</span><span class="sh_symbol">(</span><span class="sh_string">"exec my_proc \@p1 = ?"</span><span class="sh_symbol">);</span>
+    <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span><span class="sh_function">bind_param</span><span class="sh_symbol">(</span><span class="sh_number">1</span><span class="sh_symbol">,</span> <span class="sh_number">3.456</span><span class="sh_symbol">,</span> SQL_NUMERIC<span class="sh_symbol">);</span></pre>
+
+<p>This generates the following error:</p>
+
+<p>DBD::Sybase::st execute failed: Server message number=241 severity=16
+ state=2 line=0 procedure=dbitest text=Scale error during implicit 
+conversion of NUMERIC value '3.456' to a NUMERIC field.</p>
+
+<p>You can tell Sybase (and DBD::Sybase) to ignore these sorts of errors by setting the <i>arithabort</i> option:</p>
+
+<pre class="sh_perl sh_sourceCode">    <span class="sh_variable">$dbh</span><span class="sh_symbol">-&gt;</span><span class="sh_keyword">do</span><span class="sh_symbol">(</span><span class="sh_string">"set arithabort off"</span><span class="sh_symbol">);</span></pre>
+
+<p>See the <i>set</i> command in the Sybase Adaptive Server Enterprise 
+Reference Manual for more information on the set command and on the 
+arithabort option.</p>
+
+<h1><a class="u" href="#___top" title="click to go to top of document" name="Other_Private_Methods">Other Private Methods <img alt="^" src="Sybase.pm_files/up.gif"></a></h1>
+
+<h2><a class="u" href="#___top" title="click to go to top of document" name="DBD::Sybase_private_Database_Handle_Methods">DBD::Sybase private Database Handle Methods</a></h2>
+
+<dl>
+<dt><a name="bool"></a><a name="$bool_=_$dbh-&gt;syb_isdead">$bool = $dbh-&gt;syb_isdead</a></dt>
+
+<dd>
+<p>Tests the connection to see if the connection has been marked DEAD by
+ OpenClient. The connection can get marked DEADÂ&nbsp;if an error occurs
+ on the connection, or the connection fails.</p>
+</dd>
+</dl>
+
+<h2><a class="u" href="#___top" title="click to go to top of document" name="DBD::Sybase_private_Statement_Handle_Methods">DBD::Sybase private Statement Handle Methods</a></h2>
+
+<dl>
+<dt><a name="data"></a><a name="@data_=_$sth-&gt;syb_describe([$assoc])">@data = $sth-&gt;syb_describe([$assoc])</a></dt>
+
+<dd>
+<p>Retrieves the description of each of the output columns of the 
+current result set. Each element of the returned array is a reference to
+ a hash that describes the column. The following fields are set: NAME, 
+TYPE, SYBTYPE, MAXLENGTH, SCALE, PRECISION, STATUS.</p>
+
+<p>You could use it like this:</p>
+
+<pre class="sh_perl sh_sourceCode">   <span class="sh_keyword">my</span> <span class="sh_variable">$sth</span> <span class="sh_symbol">=</span> <span class="sh_variable">$dbh</span><span class="sh_symbol">-&gt;</span><span class="sh_function">prepare</span><span class="sh_symbol">(</span><span class="sh_string">"select name, uid from sysusers"</span><span class="sh_symbol">);</span>
+   <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span>execute<span class="sh_symbol">;</span>
+   <span class="sh_keyword">my</span> <span class="sh_variable">@description</span> <span class="sh_symbol">=</span> <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span>syb_describe<span class="sh_symbol">;</span>
+   <span class="sh_keyword">print</span> <span class="sh_string">"$description[0]-&gt;{NAME}\n"</span><span class="sh_symbol">;</span>         <span class="sh_comment"># prints name</span>
+   <span class="sh_keyword">print</span> <span class="sh_string">"$description[0]-&gt;{MAXLENGTH}\n"</span><span class="sh_symbol">;</span>    <span class="sh_comment"># prints 30</span>
+   <span class="sh_symbol">....</span>
+
+   <span class="sh_keyword">while</span><span class="sh_symbol">(</span><span class="sh_keyword">my</span> <span class="sh_variable">$row</span> <span class="sh_symbol">=</span> <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span>fetch<span class="sh_symbol">)</span> <span class="sh_cbracket">{</span>
+      <span class="sh_symbol">....</span>
+   <span class="sh_cbracket">}</span></pre>
+
+<p>The STATUS field is a string which can be tested for the following 
+values: CS_CANBENULL, CS_HIDDEN, CS_IDENTITY, CS_KEY, CS_VERSION_KEY, 
+CS_TIMESTAMP and CS_UPDATABLE. See table 3-46 of the Open Client Client 
+Library Reference Manual for a description of each of these values.</p>
+
+<p>The TYPE field is the data type that Sybase::CTlib converts the 
+column to when retrieving the data, so a DATETIME column will be 
+returned as a CS_CHAR_TYPE column.</p>
+
+<p>The SYBTYPE field is the real Sybase data type for this column.</p>
+
+<p><i>Note that the symbolic values of the CS_xxx symbols isn't available yet in DBD::Sybase.</i></p>
+</dd>
+</dl>
+
+<h1><a class="u" href="#___top" title="click to go to top of document" name="Experimental_Bulk-Load_Functionality">Experimental Bulk-Load Functionality <img alt="^" src="Sybase.pm_files/up.gif"></a></h1>
+
+<p><b>NOTE</b>: This feature requires that the <i>libblk.a</i> library 
+be available at build time. This is not always the case if the Sybase 
+SDK isn't installed. You can test the $dbh-&gt;{syb_has_blk} attribute 
+to see if the BLK api calls are available in your copy of DBD::Sybase.</p>
+
+<p>Starting with release 1.04.2 DBD::Sybase has the ability to use 
+Sybase's BLK (bulk-loading) API to perform fast data loads. Basic usage 
+is as follows:</p>
+
+<pre class="sh_perl sh_sourceCode">  <span class="sh_keyword">my</span> <span class="sh_variable">$dbh</span> <span class="sh_symbol">=</span> DBI<span class="sh_symbol">-&gt;</span><span class="sh_function">connect</span><span class="sh_symbol">(</span><span class="sh_string">'dbi:Sybase:server=MY_SERVER;bulkLogin=1'</span><span class="sh_symbol">,</span> <span class="sh_variable">$user</span><span class="sh_symbol">,</span> <span class="sh_variable">$pwd</span><span class="sh_symbol">);</span>
+
+  <span class="sh_variable">$dbh</span><span class="sh_symbol">-&gt;</span>begin_work<span class="sh_symbol">;</span>  <span class="sh_comment"># optional.</span>
+  <span class="sh_keyword">my</span> <span class="sh_variable">$sth</span> <span class="sh_symbol">=</span> <span class="sh_variable">$dbh</span><span class="sh_symbol">-&gt;</span><span class="sh_function">prepare</span><span class="sh_symbol">(</span><span class="sh_string">"insert the_table values(?, ?, ?, ?, ?)"</span><span class="sh_symbol">,</span>
+                          <span class="sh_cbracket">{</span>syb_bcp_attribs <span class="sh_symbol">=&gt;</span> <span class="sh_cbracket">{</span> identity_flag <span class="sh_symbol">=&gt;</span> <span class="sh_number">0</span><span class="sh_symbol">,</span>
+                                               identity_column <span class="sh_symbol">=&gt;</span> <span class="sh_number">0</span> <span class="sh_cbracket">}}}</span><span class="sh_symbol">);</span>
+  <span class="sh_keyword">while</span><span class="sh_symbol">(</span><span class="sh_string">&lt;DATA&gt;</span><span class="sh_symbol">)</span> <span class="sh_cbracket">{</span>
+    <span class="sh_keyword">chomp</span><span class="sh_symbol">;</span>
+    <span class="sh_keyword">my</span> <span class="sh_variable">@row</span> <span class="sh_symbol">=</span> <span class="sh_keyword">split</span><span class="sh_symbol">(</span><span class="sh_string">/\|/</span><span class="sh_symbol">,</span> <span class="sh_variable">$_</span><span class="sh_symbol">);</span>   <span class="sh_comment"># assume a pipe-delimited file...</span>
+    <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span><span class="sh_function">execute</span><span class="sh_symbol">(</span><span class="sh_variable">@row</span><span class="sh_symbol">);</span>
+  <span class="sh_cbracket">}</span>
+  <span class="sh_variable">$dbh</span><span class="sh_symbol">-&gt;</span>commit<span class="sh_symbol">;</span>
+  <span class="sh_keyword">print</span> <span class="sh_string">"Sent "</span><span class="sh_symbol">,</span> <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span>rows<span class="sh_symbol">,</span> <span class="sh_string">" to the server\n"</span><span class="sh_symbol">;</span>
+  <span class="sh_variable">$sth</span><span class="sh_symbol">-&gt;</span>finish<span class="sh_symbol">;</span></pre>
+
+<p>First, you need to specify the new <i>bulkLogin</i> attribute in the 
+connection string, which turns on the CS_BULK_LOGIN property for the 
+connection. Without this property the BLK api will not be functional.</p>
+
+<p>You call $dbh-&gt;prepare() with a regular INSERT statement and the special <i>syb_bcp_attribs</i> attribute to turn on BLK handling of the data. The <i>identity_flag</i>
+ sub-attribute can be set to 1 if your source data includes the values 
+for the target table's IDENTITY column. If the target table has an 
+IDENTITY column but you want the insert operation to generate a new 
+value for each row then leave <i>identity_flag</i> at 0, but set <i>identity_col</i> to the column number of the identity column (it's usually the first column in the table, but not always.)</p>
+
+<p>The number of placeholders in the INSERT statement <i>must</i> correspond to the number of columns in the table, and the input data <i>must</i> be in the same order as the table's physical column order. Any column list in the INSERT statement (i.e. <i>insert table(a, b, c,...) values(...)</i> is ignored.</p>
+
+<p>The value of AutoCommit is ignored for BLK operations - rows are only commited when you call $dbh-&gt;commit.</p>
+
+<p>You can call $dbh-&gt;rollback to cancel any uncommited rows, but this <i>also</i> cancels the rest of the BLK operation: any attempt to load rows to the server after a call to $dbh-&gt;rollback() will fail.</p>
+
+<p>If a row fails to load due to a CLIENT side error (such as a data 
+conversion error) then $sth-&gt;execute() will return a failure (i.e. 
+false) and $sth-&gt;errstr will have the reason for the error.</p>
+
+<p>If a row fails on the SERVER side (for example due to a duplicate row
+ error) then the entire batch (i.e. between two $dbh-&gt;commit() calls)
+ will fail. This is normal behavior for BLK/bcp.</p>
+
+<p>The Bulk-Load API is very sensitive to data conversion issues, as all
+ the conversions are handled on the client side, and the row is 
+pre-formatted before being sent to the server. By default any conversion
+ that is flagged by Sybase's cs_convert() call will result in a failed 
+row. Some of these conversion errors are patently fatal (e.g. converting
+ 'Feb 30 2001' to a DATETIME value...), while others are debatable (e.g.
+ converting 123.456 to a NUMERIC(6,2) which results in a loss of 
+precision). The default behavior of failing any row that has a 
+conversion error in it can be modified by using a special error handler.
+ Returning 0 from this handler tells DBD::Sybase to fail this row, and 
+returning 1 means that we still want to try to send the row to the 
+server (obviously Sybase's internal code can still fail the row at that 
+point.) You set the handler like this:</p>
+
+<pre class="sh_perl sh_sourceCode">    DBD<span class="sh_symbol">::</span>Sybase<span class="sh_symbol">::</span><span class="sh_function">syb_set_cslib_cb</span><span class="sh_symbol">(\&amp;</span>handler<span class="sh_symbol">);</span></pre>
+
+<p>and a sample handler:</p>
+
+<pre class="sh_perl sh_sourceCode">   <span class="sh_keyword">sub</span> cslib_handler <span class="sh_cbracket">{</span>
+     <span class="sh_keyword">my</span> <span class="sh_symbol">(</span><span class="sh_variable">$layer</span><span class="sh_symbol">,</span> <span class="sh_variable">$origin</span><span class="sh_symbol">,</span> <span class="sh_variable">$severity</span><span class="sh_symbol">,</span> <span class="sh_variable">$errno</span><span class="sh_symbol">,</span> <span class="sh_variable">$errmsg</span><span class="sh_symbol">,</span> <span class="sh_variable">$osmsg</span><span class="sh_symbol">,</span> <span class="sh_variable">$blkmsg</span><span class="sh_symbol">)</span> <span class="sh_symbol">=</span> <span class="sh_variable">@_</span><span class="sh_symbol">;</span>
+     
+     <span class="sh_keyword">print</span> <span class="sh_string">"Layer: $layer, Origin: $origin, Severity: $severity, Error: $errno\n"</span><span class="sh_symbol">;</span>
+     <span class="sh_keyword">print</span> <span class="sh_variable">$msg</span><span class="sh_symbol">;</span>
+     <span class="sh_keyword">print</span> <span class="sh_variable">$osmsg</span> <span class="sh_keyword">if</span><span class="sh_symbol">(</span><span class="sh_variable">$osmsg</span><span class="sh_symbol">);</span>
+     <span class="sh_keyword">print</span> <span class="sh_variable">$blkmsg</span> <span class="sh_keyword">if</span> <span class="sh_variable">$blkmsg</span><span class="sh_symbol">;</span>
+
+     <span class="sh_keyword">return</span> <span class="sh_number">1</span> <span class="sh_keyword">if</span><span class="sh_symbol">(</span><span class="sh_variable">$errno</span> <span class="sh_symbol">==</span> <span class="sh_number">36</span><span class="sh_symbol">)</span>
+
+     <span class="sh_keyword">return</span> <span class="sh_number">0</span><span class="sh_symbol">;</span>
+   <span class="sh_cbracket">}</span></pre>
+
+<p>Please see the t/xblk.t test script for some examples.</p>
+
+<p>Reminder - this is an <i>experimental</i> implementation. It may change in the future, and it could be buggy.</p>
+
+<h1><a class="u" href="#___top" title="click to go to top of document" name="Using_DBD::Sybase_with_MS-SQL">Using DBD::Sybase with MS-SQL <img alt="^" src="Sybase.pm_files/up.gif"></a></h1>
+
+<p>MS-SQL started out as Sybase 4.2, and there are still a lot of 
+similarities between Sybase and MS-SQL which makes it possible to use 
+DBD::Sybase to query a MS-SQL dataserver using either the Sybase 
+OpenClient libraries or the FreeTDS libraries (see <a href="http://www.freetds.org/" class="podlinkurl">http://www.freetds.org</a>).</p>
+
+<p>However, using the Sybase libraries to query an MS-SQL server has 
+certain limitations. In particular ?-style placeholders are not 
+supported (although support when using the FreeTDS libraries is possible
+ in a future release of the libraries), and certain <b>syb_</b> attributes may not be supported.</p>
+
+<p>Sybase defaults the TEXTSIZE attribute (aka <b>LongReadLen</b>) to 
+32k, but MS-SQL 7 doesn't seem to do that correctly, resulting in very 
+large memory requests when querying tables with TEXT/IMAGE data columns.
+ The work-around is to set TEXTSIZE to some decent value via 
+$dbh-&gt;{LongReadLen} (if that works - I haven't had any confirmation 
+that it does) or via $dbh-&gt;do("set textsize &lt;somesize&gt;");</p>
+
+<h1><a class="u" href="#___top" title="click to go to top of document" name="nsql">nsql <img alt="^" src="Sybase.pm_files/up.gif"></a></h1>
+
+<p>The nsql() call is a direct port of the function of the same name 
+that exists in Sybase::DBlib. From 1.08 it has been extended to offer 
+new functionality.</p>
+
+<p>Usage:</p>
+
+<pre class="sh_perl sh_sourceCode">   <span class="sh_variable">@data</span> <span class="sh_symbol">=</span> <span class="sh_variable">$dbh</span><span class="sh_symbol">-&gt;</span><span class="sh_function">func</span><span class="sh_symbol">(</span><span class="sh_variable">$sql</span><span class="sh_symbol">,</span> <span class="sh_variable">$type</span><span class="sh_symbol">,</span> <span class="sh_variable">$callback</span><span class="sh_symbol">,</span> <span class="sh_variable">$options</span><span class="sh_symbol">,</span> <span class="sh_string">'nsql'</span><span class="sh_symbol">);</span></pre>
+
+<p>If the DBI version is 1.37 or later, then you can also call it this way:</p>
+
+<pre class="sh_perl sh_sourceCode">   <span class="sh_variable">@data</span> <span class="sh_symbol">=</span> <span class="sh_variable">$dbh</span><span class="sh_symbol">-&gt;</span><span class="sh_function">syb_nsql</span><span class="sh_symbol">(</span><span class="sh_variable">$sql</span><span class="sh_symbol">,</span> <span class="sh_variable">$type</span><span class="sh_symbol">,</span> <span class="sh_variable">$callback</span><span class="sh_symbol">,</span> <span class="sh_variable">$options</span><span class="sh_symbol">);</span></pre>
+
+<p>This executes the query in $sql, and returns all the data in @data. 
+The $type parameter can be used to specify that each returned row be in 
+array form (i.e. $type passed as 'ARRAY', which is the default) or in 
+hash form ($type passed as 'HASH') with column names as keys.</p>
+
+<p>If $callback is specified it is taken as a reference to a perl sub, 
+and each row returned by the query is passed to this subroutine <i>instead</i> of being returned by the routine (to allow processing of large result sets, for example).</p>
+
+<p>If $options is specified and is a HASH ref, the following keys affect the value returned by nsql():</p>
+
+<dl>
+<dt><a name="oktypes"></a><a name="oktypes_=&gt;_[...]">oktypes =&gt; [...]</a></dt>
+
+<dd>
+<p>This generalises <i>syb_nsql_nostatus</i> (see below) by ignoring any result sets which are of a type not listed.</p>
+
+</dd><dt><a name="bytype"></a><a name="bytype_=&gt;_0|1|'merge'">bytype =&gt; 0|1|'merge'</a></dt>
+
+<dd>
+<p>If this option is set to a true value, each result set will be 
+returned as the value of a hash, the key of which is the result type of 
+this result set as defined by the CS_*_TYPE values described above. If 
+the special value 'merge' is used, result sets of the same type will be 
+catenated (as nsql() does by default) into a single array of results and
+ the result of the nsql() call will be a single hash keyed by result 
+type. Usage is better written %data = $dbh-&gt;syb_nsql(...) in this 
+case.</p>
+
+</dd><dt><a name="arglist"></a><a name="arglist_=&gt;_[...]">arglist =&gt; [...]</a></dt>
+
+<dd>
+<p>This option provides support for placeholders in the SQL query passed
+ to nsql(). Each time the SQL statement is executed the array value of 
+this option will be passed as the parameter list to the execute() 
+method.</p>
+</dd>
+</dl>
+
+<p>Note that if $callback is omitted, a hash reference in that parameter
+ position will be interpreted as an option hash if no hash reference is 
+found in the $options parameter position.</p>
+
+<p><code>nsql</code> also checks three special attributes to enable deadlock retry logic (<i>Note</i> none of these attributes have any effect anywhere else at the moment):</p>
+
+<dl>
+<dt><a name="syb_deadlock_retry"></a><a name="syb_deadlock_retry_count">syb_deadlock_retry <i>count</i></a></dt>
+
+<dd>
+<p>Set this to a non-0 value to enable deadlock detection and retry 
+logic within nsql(). If a deadlock error is detected (error code 1205) 
+then the entire batch is re-submitted up to <i>syb_deadlock_retry</i> times. Default is 0 (off).</p>
+
+</dd><dt><a name="syb_deadlock_sleep"></a><a name="syb_deadlock_sleep_seconds">syb_deadlock_sleep <i>seconds</i></a></dt>
+
+<dd>
+<p>Number of seconds to sleep between deadlock retries. Default is 60.</p>
+
+</dd><dt><a name="syb_deadlock_verbose"></a><a name="syb_deadlock_verbose_(bool)">syb_deadlock_verbose (bool)</a></dt>
+
+<dd>
+<p>Enable verbose logging of deadlock retry logic. Default is off.</p>
+
+</dd><dt><a name="syb_nsql_nostatus"></a><a name="syb_nsql_nostatus_(bool)">syb_nsql_nostatus (bool)</a></dt>
+
+<dd>
+<p>If true then stored procedure return status values (i.e. results of type CS_STATUS_RESULT) are ignored.</p>
+</dd>
+</dl>
+
+<p>Deadlock detection will be added to the $dbh-&gt;do() method in a future version of DBD::Sybase.</p>
+
+<h1><a class="u" href="#___top" title="click to go to top of document" name="Multi-Threading">Multi-Threading <img alt="^" src="Sybase.pm_files/up.gif"></a></h1>
+
+<p>DBD::Sybase is thread-safe (i.e. can be used in a multi-threaded perl
+ application where more than one thread accesses the database server) 
+with the following restrictions:</p>
+
+<ul>
+<li>perl version &gt;= 5.8
+<p>DBD::Sybase requires the use of <i>ithreads</i>, available in the perl 5.8.0 release. It will not work with the older 5.005 threading model.</p>
+</li>
+
+<li>Sybase thread-safe libraries
+<p>Sybase's Client Library comes in two flavors. DBD::Sybase must find 
+the thread-safe version of the libraries (ending in _r on Unix/linux). 
+This means Open Client 11.1.1 or later. In particular this means that 
+you can't use the 10.0.4 libraries from the free 11.0.3.3 release on 
+linux if you want to use multi-threading.</p>
+
+<p>Note: when using perl &gt;= 5.8 with the thread-safe libraries 
+(libct_r.so, etc) then signal handling is broken and any signal 
+delivered to the perl process will result in a segmentation fault. It is
+ recommended in that case to link with the non-threadsafe libraries.</p>
+</li>
+
+<li>use DBD::Sybase
+<p>You <i>must</i> include the <code>use DBD::Sybase;</code> line in your program. This is needed because DBD::Sybase needs to do some setup <i>before</i> the first thread is started.</p>
+</li>
+</ul>
+
+<p>You can check to see if your version of DBD::Sybase is thread-safe at
+ run-time by calling DBD::Sybase::thread_enabled(). This will return <i>true</i> if multi-threading is available.</p>
+
+<p>See t/thread.t for a simple example.</p>
+
+<h1><a class="u" href="#___top" title="click to go to top of document" name="BUGS">BUGS <img alt="^" src="Sybase.pm_files/up.gif"></a></h1>
+
+<p>You can run out of space in the tempdb database if you use a lot of 
+calls with bind variables (ie ?-style placeholders) without closing the 
+connection and Sybase 11.5.x or older. This is because Sybase creates 
+stored procedures for each prepare() call. In 11.9.x and later Sybase 
+will create "light-weight" stored procedures which don't use up any 
+space in the tempdb database.</p>
+
+<p>The primary_key_info() method will only return data for tables where a
+ declarative "primary key" constraint was included when the table was 
+created.</p>
+
+<p>I have a simple bug tracking database at <a href="http://www.peppler.org/bugdb/" class="podlinkurl">http://www.peppler.org/bugdb/</a> . You can use it to view known problems, or to report new ones.</p>
+
+<h1><a class="u" href="#___top" title="click to go to top of document" name="SEE_ALSO">SEE ALSO <img alt="^" src="Sybase.pm_files/up.gif"></a></h1>
+
+<p><a href="http://search.cpan.org/perldoc?DBI" class="podlinkpod">DBI</a></p>
+
+<p>Sybase OpenClient C manuals.</p>
+
+<p>Sybase Transact SQL manuals.</p>
+
+<h1><a class="u" href="#___top" title="click to go to top of document" name="AUTHOR">AUTHOR <img alt="^" src="Sybase.pm_files/up.gif"></a></h1>
+
+<p>DBD::Sybase by Michael Peppler</p>
+
+<h1><a class="u" href="#___top" title="click to go to top of document" name="COPYRIGHT">COPYRIGHT <img alt="^" src="Sybase.pm_files/up.gif"></a></h1>
+
+<p>The DBD::Sybase module is Copyright (c) 1996-2007 Michael Peppler. 
+The DBD::Sybase module is free software; you can redistribute it and/or 
+modify it under the same terms as Perl itself.</p>
+
+<h1><a class="u" href="#___top" title="click to go to top of document" name="ACKNOWLEDGEMENTS">ACKNOWLEDGEMENTS <img alt="^" src="Sybase.pm_files/up.gif"></a></h1>
+
+<p>Tim Bunce for DBI, obviously!</p>
+
+<p>See also <a href="http://search.cpan.org/perldoc?DBI#ACKNOWLEDGEMENTS" class="podlinkpod">"ACKNOWLEDGEMENTS" in DBI</a>.</p>
+
+</div>
+<!-- This should probably be put in the <div class="footer"></div> -->
+<script type="text/javascript">
+    $(document).ready(function(){
+        var startingStyle = $.cookie('css') ? $.cookie('css') : 'http://st.pimg.net/tucs/css/sh_none.min.css';
+        $.fn.styleSwitch(startingStyle);
+        $("#styleswitch").val(startingStyle);
+        sh_highlightDocument();
+        $("#styleswitch").bind(($.browser.msie ? "click" : "change"), function() {
+            $.fn.styleSwitch($(this).val());
+        });
+    });
+</script>
+<div class="styleswitch">
+    syntax highlighting:
+    <select id="styleswitch">
+        <option selected="selected" value="http://st.pimg.net/tucs/css/sh_none.min.css">no syntax highlighting</option>
+        <option value="http://st.pimg.net/tucs/css/sh_acid.min.css">acid</option>
+        <option value="http://st.pimg.net/tucs/css/sh_berries-dark.min.css">berries-dark</option>
+        <option value="http://st.pimg.net/tucs/css/sh_berries-light.min.css">berries-light</option>
+        <option value="http://st.pimg.net/tucs/css/sh_bipolar.min.css">bipolar</option>
+        <option value="http://st.pimg.net/tucs/css/sh_blacknblue.min.css">blacknblue</option>
+        <option value="http://st.pimg.net/tucs/css/sh_bright.min.css">bright</option>
+        <option value="http://st.pimg.net/tucs/css/sh_contrast.min.css">contrast</option>
+        <option value="http://st.pimg.net/tucs/css/sh_cpan.min.css">cpan</option>
+        <option value="http://st.pimg.net/tucs/css/sh_darkblue.min.css">darkblue</option>
+        <option value="http://st.pimg.net/tucs/css/sh_darkness.min.css">darkness</option>
+        <option value="http://st.pimg.net/tucs/css/sh_desert.min.css">desert</option>
+        <option value="http://st.pimg.net/tucs/css/sh_dull.min.css">dull</option>
+        <option value="http://st.pimg.net/tucs/css/sh_easter.min.css">easter</option>
+        <option value="http://st.pimg.net/tucs/css/sh_emacs.min.css">emacs</option>
+        <option value="http://st.pimg.net/tucs/css/sh_golden.min.css">golden</option>
+        <option value="http://st.pimg.net/tucs/css/sh_greenlcd.min.css">greenlcd</option>
+        <option value="http://st.pimg.net/tucs/css/sh_ide-anjuta.min.css">ide-anjuta</option>
+        <option value="http://st.pimg.net/tucs/css/sh_ide-codewarrior.min.css">ide-codewarrior</option>
+        <option value="http://st.pimg.net/tucs/css/sh_ide-devcpp.min.css">ide-devcpp</option>
+        <option value="http://st.pimg.net/tucs/css/sh_ide-eclipse.min.css">ide-eclipse</option>
+        <option value="http://st.pimg.net/tucs/css/sh_ide-kdev.min.css">ide-kdev</option>
+        <option value="http://st.pimg.net/tucs/css/sh_ide-msvcpp.min.css">ide-msvcpp</option>
+        <option value="http://st.pimg.net/tucs/css/sh_kwrite.min.css">kwrite</option>
+        <option value="http://st.pimg.net/tucs/css/sh_matlab.min.css">matlab</option>
+        <option value="http://st.pimg.net/tucs/css/sh_navy.min.css">navy</option>
+        <option value="http://st.pimg.net/tucs/css/sh_nedit.min.css">nedit</option>
+        <option value="http://st.pimg.net/tucs/css/sh_neon.min.css">neon</option>
+        <option value="http://st.pimg.net/tucs/css/sh_night.min.css">night</option>
+        <option value="http://st.pimg.net/tucs/css/sh_pablo.min.css">pablo</option>
+        <option value="http://st.pimg.net/tucs/css/sh_peachpuff.min.css">peachpuff</option>
+        <option value="http://st.pimg.net/tucs/css/sh_print.min.css">print</option>
+        <option value="http://st.pimg.net/tucs/css/sh_rand01.min.css">rand01</option>
+	<option value="http://st.pimg.net/tucs/css/sh_solarized-dark.min.css">solarized-dark</option>
+	<option value="http://st.pimg.net/tucs/css/sh_solarized-light.min.css">solarized-light</option>
+        <option value="http://st.pimg.net/tucs/css/sh_style.min.css">style</option>
+        <option value="http://st.pimg.net/tucs/css/sh_the.min.css">the</option>
+        <option value="http://st.pimg.net/tucs/css/sh_typical.min.css">typical</option>
+        <option value="http://st.pimg.net/tucs/css/sh_vampire.min.css">vampire</option>
+        <option value="http://st.pimg.net/tucs/css/sh_vim-dark.min.css">vim-dark</option>
+        <option value="http://st.pimg.net/tucs/css/sh_vim.min.css">vim</option>
+        <option value="http://st.pimg.net/tucs/css/sh_whatis.min.css">whatis</option>
+        <option value="http://st.pimg.net/tucs/css/sh_whitengrey.min.css">whitengrey</option>
+        <option value="http://st.pimg.net/tucs/css/sh_zellner.min.css">zellner</option>
+    </select>
+</div>
+
+
+
+<div class="footer"><div class="cpanstats">88818 Uploads, 26954 Distributions
+117819 Modules, 10442 Uploaders
+</div>
+hosted by <a href="http://www.yellowbot.com/">YellowBot</a><br>
+<a href="http://www.yellowbot.com/"><img alt="do. tag. write. share." src="Sybase.pm_files/yellowbot_logo.gif"></a>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="Sybase.pm_files/ga.js" type="text/javascript"></script>
+<script type="text/javascript" src="Sybase.pm_files/v6test.js"></script>
+
+<script type="text/javascript">
+   // v6.target = '';
+   if (!v6.target) { v6.only_once = true }
+   v6.site = '7A0D89A6-2B82-11DF-B9DA-F61CBD13F020';
+   v6.api_server = 'http://ipv4.v6test.develooper.com';
+   try {
+     v6.test();
+   } catch(err) {}
+</script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("a[href^=http:]").click(function(){
+      var href = $(this).attr('href');
+      var m = href.match('\/\/([^\/:]+)');
+      _gaq.push(['_trackEvent','External',m[1],'Module']);
+    });
+    $("a[href^=/CPAN/]").click(function(){
+      var href = $(this).attr('href');
+      _gaq.push(['_trackEvent','Download',href,'Module']);
+    });
+  });
+</script>
+<!-- Thu Feb 28 03:19:32 2013 GMT (0.256640195846558) @cpansearch1 -->
+ 
+
+</body></html>

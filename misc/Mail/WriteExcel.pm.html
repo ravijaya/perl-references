@@ -1,0 +1,655 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+  <link rel="stylesheet" href="WriteExcel.pm_files/style.css" type="text/css">
+<style>
+.styleswitch {
+  text-align: right;
+}
+</style>
+
+
+<script type="text/javascript" src="WriteExcel.pm_files/jquery_002.js"></script>
+<script type="text/javascript" src="WriteExcel.pm_files/jquery_003.js"></script>
+<script type="text/javascript" src="WriteExcel.pm_files/sh_main.js"></script>
+<script type="text/javascript" src="WriteExcel.pm_files/sh_perl.js"></script>
+<script type="text/javascript" src="WriteExcel.pm_files/jquery.js"></script>
+
+<link rel="stylesheet" href="WriteExcel.pm_files/print.css" type="text/css" media="print">
+  <link rel="alternate" type="application/rss+xml" title="RSS 1.0" href="http://search.cpan.org/uploads.rdf">
+  <link rel="search" href="http://st.pimg.net/tucs/opensearch.xml" type="application/opensearchdescription+xml" title="SearchCPAN">
+  <title>Mail::Sendmail - search.cpan.org</title>
+ <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3528438-1']);
+    _gaq.push(["_setCustomVar",2,"Distribution","Mail-Sendmail",3]);
+    _gaq.push(["_setCustomVar",5,"Release","Mail-Sendmail-0.79",3]);
+    _gaq.push(["_setCustomVar",3,"Module","Mail::Sendmail",3]);
+    _gaq.push(["_setCustomVar",1,"Author","MIVKOVIC",3]);
+    _gaq.push(['_trackPageview']);
+  </script>
+ <link rel="stylesheet" type="text/css" href="WriteExcel.pm_files/sh_none.css" id="theme0.27407989429827606"></head>
+ <body id="cpansearch">
+<center><div class="logo"><a href="http://search.cpan.org/"><img src="WriteExcel.pm_files/cpan_banner.png" alt="CPAN"></a></div></center>
+<div class="menubar">
+ <a href="http://search.cpan.org/">Home</a>
+· <a href="http://search.cpan.org/author/">Authors</a>
+· <a href="http://search.cpan.org/recent">Recent</a>
+· <a href="http://log.perl.org/cpansearch/">News</a>
+· <a href="http://search.cpan.org/mirror">Mirrors</a>
+· <a href="http://search.cpan.org/faq.html">FAQ</a>
+· <a href="http://search.cpan.org/feedback">Feedback</a>
+</div>
+<form method="get" action="/search" name="f" class="searchbox">
+<input name="query" size="35" type="text">
+<br>in <select name="mode">
+ <option selected="selected" value="all">All</option>
+ <option value="module">Modules</option>
+ <option value="dist">Distributions</option>
+ <option value="author">Authors</option>
+</select>&nbsp;<input value="CPAN Search" type="submit">
+</form>
+
+
+ <a name="_top"></a>
+  <div class="path">
+<div id="permalink" class="noprint"><a href="http://search.cpan.org/perldoc?Mail%3A%3ASendmail">permalink</a></div>
+  <a href="http://search.cpan.org/%7Emivkovic/">Milivoj Ivkovic</a> &gt;
+  <a href="http://search.cpan.org/%7Emivkovic/Mail-Sendmail-0.79/">Mail-Sendmail-0.79</a> &gt;
+  Mail::Sendmail
+ </div>
+
+<div class="noprint" style="float:right;align:left;width:19ex">
+<a href="http://hexten.net/cpan-faces/"><img src="WriteExcel.pm_files/1b65905d8a53959012293c2f72c54623.png" style="float: right;" height="80" width="80"></a>
+<br style="clear:both">
+<p style="text-align:right">Download:<br> <a href="http://search.cpan.org/CPAN/authors/id/M/MI/MIVKOVIC/Mail-Sendmail-0.79.tar.gz">Mail-Sendmail-0.79.tar.gz</a></p>
+<p style="text-align:right"><a href="http://deps.cpantesters.org/?module=Mail%3A%3ASendmail;perl=latest">Dependencies</a></p>
+<p style="text-align:right"><a href="http://www.annocpan.org/%7EMIVKOVIC/Mail-Sendmail-0.79/Sendmail.pm">Annotate this POD
+(2)
+</a></p>
+<div class="box" style="width:150px; float: right">
+<h1 class="t5">Related Modules</h1>
+<div style="margin:2px">
+<a href="http://search.cpan.org/perldoc?Net%3A%3ASMTP">Net::SMTP</a><br>
+<a href="http://search.cpan.org/perldoc?MIME%3A%3ALite">MIME::Lite</a><br>
+<a href="http://search.cpan.org/perldoc?Mail%3A%3AMailer">Mail::Mailer</a><br>
+<a href="http://search.cpan.org/perldoc?Mail%3A%3ASender">Mail::Sender</a><br>
+<a href="http://search.cpan.org/perldoc?CGI%3A%3ACarp">CGI::Carp</a><br>
+<a href="http://search.cpan.org/perldoc?Data%3A%3ADumper">Data::Dumper</a><br>
+<a href="http://search.cpan.org/perldoc?Mail%3A%3ASend">Mail::Send</a><br>
+<a href="http://search.cpan.org/perldoc?HTML%3A%3ATemplate">HTML::Template</a><br>
+<a href="http://search.cpan.org/perldoc?LWP%3A%3ASimple">LWP::Simple</a><br>
+<a href="http://search.cpan.org/perldoc?Net%3A%3APOP3">Net::POP3</a><br>
+<small>
+<a href="http://perlmonks.org/?node=cpan+module+search&amp;pivot=1&amp;module=Mail%3A%3ASendmail">more...</a><br>
+By <a href="http://perlmonks.org/">perlmonks.org</a></small>
+</div>
+</div>
+
+<div style="float:right">
+<div class="box" style="width:150px">
+<h1 class="t5">CPAN RT</h1>
+<div style="margin:2px">
+<table style="margin-left: auto; margin-right: auto;">
+<tbody><tr><td>New&nbsp;</td><td style="text-align: right;"> 3</td></tr>
+<tr><td>Open&nbsp;</td><td style="text-align: right;"> 3</td></tr>
+</tbody></table>
+<a href="https://rt.cpan.org/Public/Dist/Display.html?Name=Mail-Sendmail">View/Report Bugs</a><br>
+</div>
+</div>
+
+</div>
+</div>
+  Module Version:  0.79 &nbsp;
+<span class="noprint">
+  <a href="http://search.cpan.org/src/MIVKOVIC/Mail-Sendmail-0.79/Sendmail.pm">Source</a> &nbsp;
+  Latest&nbsp;Release:&nbsp;<a href="http://search.cpan.org/%7Emivkovic/Mail-Sendmail/Sendmail.pm">Mail-Sendmail-0.79_16</a>
+</span>
+<a name="___top"></a>
+<div class="pod">
+<div class="toc">
+<div class="indexgroup">
+<ul class="indexList indexList1">
+  <li class="indexItem indexItem1"><a href="#NAME">NAME</a>
+  </li><li class="indexItem indexItem1"><a href="#SYNOPSIS">SYNOPSIS</a>
+  </li><li class="indexItem indexItem1"><a href="#DESCRIPTION">DESCRIPTION</a>
+  </li><li class="indexItem indexItem1"><a href="#INSTALLATION">INSTALLATION</a>
+  </li><li class="indexItem indexItem1"><a href="#FEATURES">FEATURES</a>
+  </li><li class="indexItem indexItem1"><a href="#LIMITATIONS">LIMITATIONS</a>
+  </li><li class="indexItem indexItem1"><a href="#CONFIGURATION">CONFIGURATION</a>
+  </li><li class="indexItem indexItem1"><a href="#DETAILS">DETAILS</a>
+  <ul class="indexList indexList2">
+    <li class="indexItem indexItem2"><a href="#sendmail%28%29">sendmail()</a>
+    </li><li class="indexItem indexItem2"><a href="#Mail::Sendmail::time_to_date%28%29">Mail::Sendmail::time_to_date()</a>
+    </li><li class="indexItem indexItem2"><a href="#$Mail::Sendmail::error">$Mail::Sendmail::error</a>
+    </li><li class="indexItem indexItem2"><a href="#$Mail::Sendmail::log">$Mail::Sendmail::log</a>
+    </li><li class="indexItem indexItem2"><a href="#$Mail::Sendmail::address_rx">$Mail::Sendmail::address_rx</a>
+    </li><li class="indexItem indexItem2"><a href="#%Mail::Sendmail::mailcfg">%Mail::Sendmail::mailcfg</a>
+    </li><li class="indexItem indexItem2"><a href="#$Mail::Sendmail::VERSION">$Mail::Sendmail::VERSION</a>
+    </li><li class="indexItem indexItem2"><a href="#Configuration_variables_from_previous_versions">Configuration variables from previous versions</a>
+  </li></ul>
+  </li><li class="indexItem indexItem1"><a href="#ANOTHER_EXAMPLE">ANOTHER EXAMPLE</a>
+  </li><li class="indexItem indexItem1"><a href="#CHANGES">CHANGES</a>
+  </li><li class="indexItem indexItem1"><a href="#AUTHOR">AUTHOR</a>
+  </li><li class="indexItem indexItem1"><a href="#NOTES">NOTES</a>
+</li></ul>
+</div>
+</div>
+
+<h1><a class="u" href="#___top" title="click to go to top of document" name="NAME">NAME <img alt="^" src="WriteExcel.pm_files/up.gif"></a></h1>
+
+<p>Mail::Sendmail v.
+0.79 - Simple platform independent mailer</p>
+
+<h1><a class="u" href="#___top" title="click to go to top of document" name="SYNOPSIS">SYNOPSIS <img alt="^" src="WriteExcel.pm_files/up.gif"></a></h1>
+
+<pre class="sh_perl sh_sourceCode">  <span class="sh_keyword">use</span> Mail<span class="sh_symbol">::</span>Sendmail<span class="sh_symbol">;</span>
+
+  <span class="sh_variable">%mail</span> <span class="sh_symbol">=</span> <span class="sh_symbol">(</span> To      <span class="sh_symbol">=&gt;</span> <span class="sh_string">'you@there.com'</span><span class="sh_symbol">,</span>
+            From    <span class="sh_symbol">=&gt;</span> <span class="sh_string">'me@here.com'</span><span class="sh_symbol">,</span>
+            Message <span class="sh_symbol">=&gt;</span> <span class="sh_string">"This is a very short message"</span>
+           <span class="sh_symbol">);</span>
+
+  <span class="sh_function">sendmail</span><span class="sh_symbol">(</span><span class="sh_variable">%mail</span><span class="sh_symbol">)</span> or <span class="sh_keyword">die</span> <span class="sh_variable">$Mail</span><span class="sh_symbol">::</span>Sendmail<span class="sh_symbol">::</span>error<span class="sh_symbol">;</span>
+
+  <span class="sh_keyword">print</span> <span class="sh_string">"OK. Log says:\n"</span><span class="sh_symbol">,</span> <span class="sh_variable">$Mail</span><span class="sh_symbol">::</span>Sendmail<span class="sh_symbol">::</span><span class="sh_keyword">log</span><span class="sh_symbol">;</span></pre>
+
+<h1><a class="u" href="#___top" title="click to go to top of document" name="DESCRIPTION">DESCRIPTION <img alt="^" src="WriteExcel.pm_files/up.gif"></a></h1>
+
+<p>Simple platform independent e-mail from your perl script. Only requires Perl 5 and a network connection.</p>
+
+<p>Mail::Sendmail contains mainly &amp;sendmail, which takes a hash with
+ the message to send and sends it. It is intended to be very easy to 
+setup and use. See also <a href="#FEATURES" class="podlinkpod">"FEATURES"</a> below.</p>
+
+<h1><a class="u" href="#___top" title="click to go to top of document" name="INSTALLATION">INSTALLATION <img alt="^" src="WriteExcel.pm_files/up.gif"></a></h1>
+
+<dl>
+<dt><a name="Best">Best</a></dt>
+
+<dd>
+<p><code>perl -MCPAN -e "install Mail::Sendmail"</code></p>
+
+</dd><dt><a name="Traditional">Traditional</a></dt>
+
+<dd>
+<pre class="sh_perl sh_sourceCode">    perl Makefile<span class="sh_symbol">.</span>PL
+    make
+    make test
+    make install</pre>
+
+</dd><dt><a name="Manual">Manual</a></dt>
+
+<dd>
+<p>Copy Sendmail.pm to Mail/ in your Perl lib directory.</p>
+
+<pre class="sh_perl sh_sourceCode">    <span class="sh_symbol">(</span>eg<span class="sh_symbol">.</span> c<span class="sh_symbol">:\</span>Perl<span class="sh_symbol">\</span>site<span class="sh_symbol">\</span>lib<span class="sh_symbol">\</span>Mail<span class="sh_symbol">\</span>
+     or  <span class="sh_string">/usr/lib/perl5/site_perl/Mail/</span>
+     or whatever it is on your <span class="sh_keyword">system</span><span class="sh_symbol">.</span>
+     They are listed when you type C<span class="sh_string">&lt; perl -V &gt;</span><span class="sh_symbol">)</span></pre>
+
+</dd><dt><a name="ActivePerl"></a><a name="ActivePerl's_PPM">ActivePerl's PPM</a></dt>
+
+<dd>
+<p>ppm install --location=<a href="http://alma.ch/perl/ppm" class="podlinkurl">http://alma.ch/perl/ppm</a> Mail-Sendmail</p>
+
+<p>But this way you don't get a chance to have a look at other files (Changes, Todo, test.pl, ...).</p>
+</dd>
+</dl>
+
+<p>At the top of Sendmail.pm, set your default SMTP server(s), unless 
+you specify it with each message, or want to use the default 
+(localhost).</p>
+
+<p>Install MIME::QuotedPrint. This is not required but strongly recommended.</p>
+
+<h1><a class="u" href="#___top" title="click to go to top of document" name="FEATURES">FEATURES <img alt="^" src="WriteExcel.pm_files/up.gif"></a></h1>
+
+<p>Automatic time zone detection, Date: header, MIME quoted-printable 
+encoding (if MIME::QuotedPrint installed), all of which can be 
+overridden.</p>
+
+<p>Bcc: and Cc: support.</p>
+
+<p>Allows real names in From:, To: and Cc: fields</p>
+
+<p>Doesn't send an X-Mailer: header (unless you do), and allows you to send any header(s) you want.</p>
+
+<p>Configurable retries and use of alternate servers if your mail server is down</p>
+
+<p>Good plain text error reporting</p>
+
+<h1><a class="u" href="#___top" title="click to go to top of document" name="LIMITATIONS">LIMITATIONS <img alt="^" src="WriteExcel.pm_files/up.gif"></a></h1>
+
+<p>Headers are not encoded, even if they have accented characters.</p>
+
+<p>No suport for the SMTP AUTH extension.</p>
+
+<p>Since the whole message is in memory, it's not suitable for sending very big attached files.</p>
+
+<p>The SMTP server has to be set manually in Sendmail.pm or in your script, unless you have a mail server on localhost.</p>
+
+<p>Doesn't work on OpenVMS, I was told. Cannot test this myself.</p>
+
+<h1><a class="u" href="#___top" title="click to go to top of document" name="CONFIGURATION">CONFIGURATION <img alt="^" src="WriteExcel.pm_files/up.gif"></a></h1>
+
+<dl>
+<dt><a name="Default"></a><a name="Default_SMTP_server(s)">Default SMTP server(s)</a></dt>
+
+<dd>
+<p>This is probably all you want to configure. It is usually done through <i>$mailcfg{smtp}</i>,
+ which you can edit at the top of the Sendmail.pm file. This is a 
+reference to a list of SMTP servers. You can also set it from your 
+script:</p>
+
+<p><code>unshift @{$Mail::Sendmail::mailcfg{'smtp'}} , 'my.mail.server';</code></p>
+
+<p>Alternatively, you can specify the server in the <i>%mail</i> hash you send from your script, which will do the same thing:</p>
+
+<p><code>$mail{smtp} = 'my.mail.server';</code></p>
+
+<p>A future version will (hopefully) try to set useful defaults for you during the Makefile.PL.</p>
+
+</dd><dt><a name="Other"></a><a name="Other_configuration_settings">Other configuration settings</a></dt>
+
+<dd>
+<p>See <i>%mailcfg</i> under <a href="#DETAILS" class="podlinkpod">"DETAILS"</a> below for other configuration options.</p>
+</dd>
+</dl>
+
+<h1><a class="u" href="#___top" title="click to go to top of document" name="DETAILS">DETAILS <img alt="^" src="WriteExcel.pm_files/up.gif"></a></h1>
+
+<h2><a class="u" href="#___top" title="click to go to top of document" name="sendmail()">sendmail()</a></h2>
+
+<p>sendmail is the only thing exported to your namespace by default</p>
+
+<p><code>sendmail(%mail) || print "Error sending mail: $Mail::Sendmail::error\n";</code></p>
+
+<p>It takes a hash containing the full message, with keys for all 
+headers, body, and optionally for another non-default SMTP server and/or
+ port.</p>
+
+<p>It returns 1 on success or 0 on error, and rewrites <code>$Mail::Sendmail::error</code> and <code>$Mail::Sendmail::log</code>.</p>
+
+<p>Keys are NOT case-sensitive.</p>
+
+<p>The colon after headers is not necessary.</p>
+
+<p>The Body part key can be called 'Body', 'Message' or 'Text'.</p>
+
+<p>The SMTP server key can be called 'Smtp' or 'Server'. If the connection to this one fails, the other ones in <code>$mailcfg{smtp}</code> will still be tried.</p>
+
+<p>The following headers are added unless you specify them yourself:</p>
+
+<pre class="sh_perl sh_sourceCode">    Mime<span class="sh_symbol">-</span>Version<span class="sh_symbol">:</span> <span class="sh_number">1.0</span>
+    Content<span class="sh_symbol">-</span>Type<span class="sh_symbol">:</span> <span class="sh_string">'text/plain; charset="iso-8859-1"'</span>
+
+    Content<span class="sh_symbol">-</span>Transfer<span class="sh_symbol">-</span>Encoding<span class="sh_symbol">:</span> quoted<span class="sh_symbol">-</span>printable
+    <span class="sh_function">or</span> <span class="sh_symbol">(</span><span class="sh_keyword">if</span> MIME<span class="sh_symbol">::</span>QuotedPrint not installed<span class="sh_symbol">)</span>
+    Content<span class="sh_symbol">-</span>Transfer<span class="sh_symbol">-</span>Encoding<span class="sh_symbol">:</span> 8bit
+
+    Date<span class="sh_symbol">:</span> <span class="sh_symbol">[</span>string returned by <span class="sh_function">time_to_date</span><span class="sh_symbol">()]</span></pre>
+
+<p>If you wish to use an envelope sender address different than the From: address, set <code>$mail{Sender}</code> in your %mail hash.</p>
+
+<p>The following are not exported by default, but you can still access 
+them with their full name, or request their export on the use line like 
+in: <code>use Mail::Sendmail qw(sendmail $address_rx time_to_date);</code></p>
+
+<h2><a class="u" href="#___top" title="click to go to top of document" name="Mail::Sendmail::time_to_date()">Mail::Sendmail::time_to_date()</a></h2>
+
+<p>convert time ( as from <code>time()</code> ) to an RFC 822 compliant string for the Date header. See also <a href="#%Mail::Sendmail::mailcfg" class="podlinkpod">"%Mail::Sendmail::mailcfg"</a>.</p>
+
+<h2><a class="u" href="#___top" title="click to go to top of document" name="$Mail::Sendmail::error">$Mail::Sendmail::error</a></h2>
+
+<p>When you don't run with the <b>-w</b> flag, the module sends no 
+errors to STDERR, but puts anything it has to complain about in here. 
+You should probably always check if it says something.</p>
+
+<h2><a class="u" href="#___top" title="click to go to top of document" name="$Mail::Sendmail::log">$Mail::Sendmail::log</a></h2>
+
+<p>A summary that you could write to a log file after each send</p>
+
+<h2><a class="u" href="#___top" title="click to go to top of document" name="$Mail::Sendmail::address_rx">$Mail::Sendmail::address_rx</a></h2>
+
+<p>A handy regex to recognize e-mail addresses.</p>
+
+<p>A correct regex for valid e-mail addresses was written by one of the 
+judges in the obfuscated Perl contest... :-) It is quite big. This one 
+is an attempt to a reasonable compromise, and should accept all 
+real-world internet style addresses. The domain part is required and 
+comments or characters that would need to be quoted are not supported.</p>
+
+<pre class="sh_perl sh_sourceCode">  Example<span class="sh_symbol">:</span>
+    <span class="sh_variable">$rx</span> <span class="sh_symbol">=</span> <span class="sh_variable">$Mail</span><span class="sh_symbol">::</span>Sendmail<span class="sh_symbol">::</span>address_rx<span class="sh_symbol">;</span>
+    <span class="sh_keyword">if</span> <span class="sh_symbol">(</span><span class="sh_string">/$rx/</span><span class="sh_symbol">)</span> <span class="sh_cbracket">{</span>
+      <span class="sh_variable">$address</span><span class="sh_symbol">=</span><span class="sh_variable">$1</span><span class="sh_symbol">;</span>
+      <span class="sh_variable">$user</span><span class="sh_symbol">=</span><span class="sh_variable">$2</span><span class="sh_symbol">;</span>
+      <span class="sh_variable">$domain</span><span class="sh_symbol">=</span><span class="sh_variable">$3</span><span class="sh_symbol">;</span>
+    <span class="sh_cbracket">}</span></pre>
+
+<h2><a class="u" href="#___top" title="click to go to top of document" name="%Mail::Sendmail::mailcfg">%Mail::Sendmail::mailcfg</a></h2>
+
+<p>This hash contains all configuration options. You normally edit it 
+once (if ever) in Sendmail.pm and forget about it, but you could also 
+access it from your scripts. For readability, I'll assume you have 
+imported it (with something like <code>use Mail::Sendmail qw(sendmail %mailcfg)</code>).</p>
+
+<p>The keys are not case-sensitive: they are all converted to lowercase before use. Writing <code>$mailcfg{Port} = 2525;</code> is OK: the default $mailcfg{port} (25) will be deleted and replaced with your new value of 2525.</p>
+
+<dl>
+<dt><a name="mailcfg"></a><a name="$mailcfg{smtp}">$mailcfg{smtp}</a></dt>
+
+<dd>
+<p><code>$mailcfg{smtp} = [qw(localhost my.other.mail.server)];</code></p>
+
+<p>This is a reference to a list of smtp servers, so if your main server
+ is down, the module tries the next one. If one of your servers uses a 
+special port, add it to the server name with a colon in front, to 
+override the default port (like in my.special.server:2525).</p>
+
+<p>Default: localhost.</p>
+
+</dd><dt><a name="mailcfg"></a><a name="$mailcfg{from}">$mailcfg{from}</a></dt>
+
+<dd>
+<p><code>$mailcfg{from} = 'Mailing script me@mydomain.com';</code></p>
+
+<p>From address used if you don't supply one in your script. Should not 
+be of type 'user@localhost' since that may not be valid on the 
+recipient's host.</p>
+
+<p>Default: undefined.</p>
+
+</dd><dt><a name="mailcfg"></a><a name="$mailcfg{mime}">$mailcfg{mime}</a></dt>
+
+<dd>
+<p><code>$mailcfg{mime} = 1;</code></p>
+
+<p>Set this to 0 if you don't want any automatic MIME encoding. You 
+normally don't need this, the module should 'Do the right thing' anyway.</p>
+
+<p>Default: 1;</p>
+
+</dd><dt><a name="mailcfg"></a><a name="$mailcfg{retries}">$mailcfg{retries}</a></dt>
+
+<dd>
+<p><code>$mailcfg{retries} = 1;</code></p>
+
+<p>How many times should the connection to the same SMTP server be retried in case of a failure.</p>
+
+<p>Default: 1;</p>
+
+</dd><dt><a name="mailcfg"></a><a name="$mailcfg{delay}">$mailcfg{delay}</a></dt>
+
+<dd>
+<p><code>$mailcfg{delay} = 1;</code></p>
+
+<p>Number of seconds to wait between retries. This delay also happens 
+before trying the next server in the list, if the retries for the 
+current server have been exhausted. For CGI scripts, you want few 
+retries and short delays to return with a results page before the http 
+connection times out. For unattended scripts, you may want to use many 
+retries and long delays to have a good chance of your mail being sent 
+even with temporary failures on your network.</p>
+
+<p>Default: 1 (second);</p>
+
+</dd><dt><a name="mailcfg"></a><a name="$mailcfg{tz}">$mailcfg{tz}</a></dt>
+
+<dd>
+<p><code>$mailcfg{tz} = '+0800';</code></p>
+
+<p>Normally, your time zone is set automatically, from the difference between <code>time()</code> and <code>gmtime()</code>.
+ This allows you to override automatic detection in cases where your 
+system is confused (such as some Win32 systems in zones which do not use
+ daylight savings time: see Microsoft KB article Q148681)</p>
+
+<p>Default: undefined (automatic detection at run-time).</p>
+
+</dd><dt><a name="mailcfg"></a><a name="$mailcfg{port}">$mailcfg{port}</a></dt>
+
+<dd>
+<p><code>$mailcfg{port} = 25;</code></p>
+
+<p>Port used when none is specified in the server name.</p>
+
+<p>Default: 25.</p>
+
+</dd><dt><a name="mailcfg"></a><a name="$mailcfg{debug}">$mailcfg{debug}</a></dt>
+
+<dd>
+<p><code>$mailcfg{debug} = 0;</code></p>
+
+<p>Prints stuff to STDERR. Current maximum is 6, which prints the whole SMTP session, except data exceeding 500 bytes.</p>
+
+<p>Default: 0;</p>
+</dd>
+</dl>
+
+<h2><a class="u" href="#___top" title="click to go to top of document" name="$Mail::Sendmail::VERSION">$Mail::Sendmail::VERSION</a></h2>
+
+<p>The package version number (you can not import this one)</p>
+
+<h2><a class="u" href="#___top" title="click to go to top of document" name="Configuration_variables_from_previous_versions">Configuration variables from previous versions</a></h2>
+
+<p>The following global variables were used in version 0.74 for 
+configuration. As from version 0.78_1, they are not supported anymore. 
+Use the <i>%mailcfg</i> hash if you need to access the configuration from your scripts.</p>
+
+<dl>
+<dt><a name="Mail"></a><a name="$Mail::Sendmail::default_smtp_server">$Mail::Sendmail::default_smtp_server</a></dt>
+
+<dd>
+</dd><dt><a name="Mail"></a><a name="$Mail::Sendmail::default_smtp_port">$Mail::Sendmail::default_smtp_port</a></dt>
+
+<dd>
+</dd><dt><a name="Mail"></a><a name="$Mail::Sendmail::default_sender">$Mail::Sendmail::default_sender</a></dt>
+
+<dd>
+</dd><dt><a name="Mail"></a><a name="$Mail::Sendmail::TZ">$Mail::Sendmail::TZ</a></dt>
+
+<dd>
+</dd><dt><a name="Mail"></a><a name="$Mail::Sendmail::connect_retries">$Mail::Sendmail::connect_retries</a></dt>
+
+<dd>
+</dd><dt><a name="Mail"></a><a name="$Mail::Sendmail::retry_delay">$Mail::Sendmail::retry_delay</a></dt>
+
+<dd>
+</dd><dt><a name="Mail"></a><a name="$Mail::Sendmail::use_MIME">$Mail::Sendmail::use_MIME</a></dt>
+</dl>
+
+<h1><a class="u" href="#___top" title="click to go to top of document" name="ANOTHER_EXAMPLE">ANOTHER EXAMPLE <img alt="^" src="WriteExcel.pm_files/up.gif"></a></h1>
+
+<pre class="sh_perl sh_sourceCode">  <span class="sh_keyword">use</span> Mail<span class="sh_symbol">::</span>Sendmail<span class="sh_symbol">;</span>
+
+  <span class="sh_keyword">print</span> <span class="sh_string">"Testing Mail::Sendmail version $Mail::Sendmail::VERSION\n"</span><span class="sh_symbol">;</span>
+  <span class="sh_keyword">print</span> <span class="sh_string">"Default server: $Mail::Sendmail::mailcfg{smtp}-&gt;[0]\n"</span><span class="sh_symbol">;</span>
+  <span class="sh_keyword">print</span> <span class="sh_string">"Default sender: $Mail::Sendmail::mailcfg{from}\n"</span><span class="sh_symbol">;</span>
+
+  <span class="sh_variable">%mail</span> <span class="sh_symbol">=</span> <span class="sh_symbol">(</span>
+      <span class="sh_comment">#To      =&gt; 'No to field this time, only Bcc and Cc',</span>
+      <span class="sh_comment">#From    =&gt; 'not needed, use default',</span>
+      Bcc     <span class="sh_symbol">=&gt;</span> <span class="sh_string">'Someone &lt;him@there.com&gt;, Someone else her@there.com'</span><span class="sh_symbol">,</span>
+      <span class="sh_comment"># only addresses are extracted from Bcc, real names disregarded</span>
+      Cc      <span class="sh_symbol">=&gt;</span> <span class="sh_string">'Yet someone else &lt;xz@whatever.com&gt;'</span><span class="sh_symbol">,</span>
+      <span class="sh_comment"># Cc will appear in the header. (Bcc will not)</span>
+      Subject <span class="sh_symbol">=&gt;</span> <span class="sh_string">'Test message'</span><span class="sh_symbol">,</span>
+      <span class="sh_string">'X-Mailer'</span> <span class="sh_symbol">=&gt;</span> <span class="sh_string">"Mail::Sendmail version $Mail::Sendmail::VERSION"</span><span class="sh_symbol">,</span>
+  <span class="sh_symbol">);</span>
+
+
+  <span class="sh_variable">$mail</span><span class="sh_cbracket">{</span>Smtp<span class="sh_cbracket">}</span> <span class="sh_symbol">=</span> <span class="sh_string">'special_server.for-this-message-only.domain.com'</span><span class="sh_symbol">;</span>
+  <span class="sh_variable">$mail</span><span class="sh_cbracket">{</span><span class="sh_string">'X-custom'</span><span class="sh_cbracket">}</span> <span class="sh_symbol">=</span> <span class="sh_string">'My custom additionnal header'</span><span class="sh_symbol">;</span>
+  <span class="sh_variable">$mail</span><span class="sh_cbracket">{</span><span class="sh_string">'mESSaGE : '</span><span class="sh_cbracket">}</span> <span class="sh_symbol">=</span> <span class="sh_string">"The message key looks terrible, but works."</span><span class="sh_symbol">;</span>
+  <span class="sh_comment"># cheat on the date:</span>
+  <span class="sh_variable">$mail</span><span class="sh_cbracket">{</span>Date<span class="sh_cbracket">}</span> <span class="sh_symbol">=</span> Mail<span class="sh_symbol">::</span>Sendmail<span class="sh_symbol">::</span><span class="sh_function">time_to_date</span><span class="sh_symbol">(</span> <span class="sh_function">time</span><span class="sh_symbol">()</span> <span class="sh_symbol">-</span> <span class="sh_number">86400</span> <span class="sh_symbol">);</span>
+
+  <span class="sh_keyword">if</span> <span class="sh_symbol">(</span>sendmail <span class="sh_variable">%mail</span><span class="sh_symbol">)</span> <span class="sh_cbracket">{</span> <span class="sh_keyword">print</span> <span class="sh_string">"Mail sent OK.\n"</span> <span class="sh_cbracket">}</span>
+  <span class="sh_keyword">else</span> <span class="sh_cbracket">{</span> <span class="sh_keyword">print</span> <span class="sh_string">"Error sending mail: $Mail::Sendmail::error \n"</span> <span class="sh_cbracket">}</span>
+
+  <span class="sh_keyword">print</span> <span class="sh_string">"\n\$Mail::Sendmail::log says:\n"</span><span class="sh_symbol">,</span> <span class="sh_variable">$Mail</span><span class="sh_symbol">::</span>Sendmail<span class="sh_symbol">::</span><span class="sh_keyword">log</span><span class="sh_symbol">;</span></pre>
+
+<p>Also see <a href="http://alma.ch/perl/Mail-Sendmail-FAQ.html" class="podlinkurl">http://alma.ch/perl/Mail-Sendmail-FAQ.html</a> for examples of HTML mail and sending attachments.</p>
+
+<h1><a class="u" href="#___top" title="click to go to top of document" name="CHANGES">CHANGES <img alt="^" src="WriteExcel.pm_files/up.gif"></a></h1>
+
+<p>Main changes since version 0.78:</p>
+
+<p>Added "/" (\x2F) as a valid character in mailbox part.</p>
+
+<p>Removed old configuration variables which are not used anymore since version 0.74.</p>
+
+<p>Added support for different envelope sender (through <code>$mail{Sender}</code>)</p>
+
+<p>Changed case of headers: first character after "-" also uppercased</p>
+
+<p>Support for multi-line server responses</p>
+
+<p>Localized $\ and $_</p>
+
+<p>Some internal rewrites and documentation updates</p>
+
+<p>Fixed old bug of dot as 76th character on line disappearing.</p>
+
+<p>Fixed very old bug where port number was not extracted from stuff like 'my.server:2525'.</p>
+
+<p>Fixed time_to_date bug with negative half-hour zones (only Newfoundland?)</p>
+
+<p>Added seconds to date string</p>
+
+<p>Now uses Sys::Hostname to get the hostname for HELO. (This may break 
+the module on some very old Win32 Perls where Sys::Hostname was broken)</p>
+
+<p>Enable full session output for debugging</p>
+
+<p>See the <em>Changes</em> file for the full history. If you don't have it because you installed through PPM, you can also find the latest one on <em><a href="http://alma.ch/perl/scripts/Sendmail/Changes" class="podlinkurl">http://alma.ch/perl/scripts/Sendmail/Changes</a></em>.</p>
+
+<h1><a class="u" href="#___top" title="click to go to top of document" name="AUTHOR">AUTHOR <img alt="^" src="WriteExcel.pm_files/up.gif"></a></h1>
+
+<p>Milivoj Ivkovic &lt;mi\x40alma.ch&gt; ("\x40" is "@" of course)</p>
+
+<h1><a class="u" href="#___top" title="click to go to top of document" name="NOTES">NOTES <img alt="^" src="WriteExcel.pm_files/up.gif"></a></h1>
+
+<p>MIME::QuotedPrint is used by default on every message if available. 
+It allows reliable sending of accented characters, and also takes care 
+of too long lines (which can happen in HTML mails). It is available in 
+the MIME-Base64 package at <a href="http://www.perl.com/CPAN/modules/by-module/MIME/" class="podlinkurl">http://www.perl.com/CPAN/modules/by-module/MIME/</a> or through PPM.</p>
+
+<p>Look at <a href="http://alma.ch/perl/Mail-Sendmail-FAQ.html" class="podlinkurl">http://alma.ch/perl/Mail-Sendmail-FAQ.html</a> for additional info (CGI, examples of sending attachments, HTML mail etc...)</p>
+
+<p>You can use this module freely. (Someone complained this is too 
+vague. So, more precisely: do whatever you want with it, but be warned 
+that terrible things will happen to you if you use it badly, like for 
+sending spam, or ...?)</p>
+
+<p>Thanks to the many users who sent me feedback, bug reports, 
+suggestions, etc. And please excuse me if I forgot to answer your mail. I
+ am not always reliabe in answering mail. I intend to set up a mailing 
+list soon.</p>
+
+<p>Last revision: 06.02.2003. Latest version should be available on CPAN: <em><a href="http://www.cpan.org/modules/by-authors/id/M/MI/MIVKOVIC/" class="podlinkurl">http://www.cpan.org/modules/by-authors/id/M/MI/MIVKOVIC/</a></em>.</p>
+
+</div>
+<!-- This should probably be put in the <div class="footer"></div> -->
+<script type="text/javascript">
+    $(document).ready(function(){
+        var startingStyle = $.cookie('css') ? $.cookie('css') : 'http://st.pimg.net/tucs/css/sh_none.min.css';
+        $.fn.styleSwitch(startingStyle);
+        $("#styleswitch").val(startingStyle);
+        sh_highlightDocument();
+        $("#styleswitch").bind(($.browser.msie ? "click" : "change"), function() {
+            $.fn.styleSwitch($(this).val());
+        });
+    });
+</script>
+<div class="styleswitch">
+    syntax highlighting:
+    <select id="styleswitch">
+        <option selected="selected" value="http://st.pimg.net/tucs/css/sh_none.min.css">no syntax highlighting</option>
+        <option value="http://st.pimg.net/tucs/css/sh_acid.min.css">acid</option>
+        <option value="http://st.pimg.net/tucs/css/sh_berries-dark.min.css">berries-dark</option>
+        <option value="http://st.pimg.net/tucs/css/sh_berries-light.min.css">berries-light</option>
+        <option value="http://st.pimg.net/tucs/css/sh_bipolar.min.css">bipolar</option>
+        <option value="http://st.pimg.net/tucs/css/sh_blacknblue.min.css">blacknblue</option>
+        <option value="http://st.pimg.net/tucs/css/sh_bright.min.css">bright</option>
+        <option value="http://st.pimg.net/tucs/css/sh_contrast.min.css">contrast</option>
+        <option value="http://st.pimg.net/tucs/css/sh_cpan.min.css">cpan</option>
+        <option value="http://st.pimg.net/tucs/css/sh_darkblue.min.css">darkblue</option>
+        <option value="http://st.pimg.net/tucs/css/sh_darkness.min.css">darkness</option>
+        <option value="http://st.pimg.net/tucs/css/sh_desert.min.css">desert</option>
+        <option value="http://st.pimg.net/tucs/css/sh_dull.min.css">dull</option>
+        <option value="http://st.pimg.net/tucs/css/sh_easter.min.css">easter</option>
+        <option value="http://st.pimg.net/tucs/css/sh_emacs.min.css">emacs</option>
+        <option value="http://st.pimg.net/tucs/css/sh_golden.min.css">golden</option>
+        <option value="http://st.pimg.net/tucs/css/sh_greenlcd.min.css">greenlcd</option>
+        <option value="http://st.pimg.net/tucs/css/sh_ide-anjuta.min.css">ide-anjuta</option>
+        <option value="http://st.pimg.net/tucs/css/sh_ide-codewarrior.min.css">ide-codewarrior</option>
+        <option value="http://st.pimg.net/tucs/css/sh_ide-devcpp.min.css">ide-devcpp</option>
+        <option value="http://st.pimg.net/tucs/css/sh_ide-eclipse.min.css">ide-eclipse</option>
+        <option value="http://st.pimg.net/tucs/css/sh_ide-kdev.min.css">ide-kdev</option>
+        <option value="http://st.pimg.net/tucs/css/sh_ide-msvcpp.min.css">ide-msvcpp</option>
+        <option value="http://st.pimg.net/tucs/css/sh_kwrite.min.css">kwrite</option>
+        <option value="http://st.pimg.net/tucs/css/sh_matlab.min.css">matlab</option>
+        <option value="http://st.pimg.net/tucs/css/sh_navy.min.css">navy</option>
+        <option value="http://st.pimg.net/tucs/css/sh_nedit.min.css">nedit</option>
+        <option value="http://st.pimg.net/tucs/css/sh_neon.min.css">neon</option>
+        <option value="http://st.pimg.net/tucs/css/sh_night.min.css">night</option>
+        <option value="http://st.pimg.net/tucs/css/sh_pablo.min.css">pablo</option>
+        <option value="http://st.pimg.net/tucs/css/sh_peachpuff.min.css">peachpuff</option>
+        <option value="http://st.pimg.net/tucs/css/sh_print.min.css">print</option>
+        <option value="http://st.pimg.net/tucs/css/sh_rand01.min.css">rand01</option>
+	<option value="http://st.pimg.net/tucs/css/sh_solarized-dark.min.css">solarized-dark</option>
+	<option value="http://st.pimg.net/tucs/css/sh_solarized-light.min.css">solarized-light</option>
+        <option value="http://st.pimg.net/tucs/css/sh_style.min.css">style</option>
+        <option value="http://st.pimg.net/tucs/css/sh_the.min.css">the</option>
+        <option value="http://st.pimg.net/tucs/css/sh_typical.min.css">typical</option>
+        <option value="http://st.pimg.net/tucs/css/sh_vampire.min.css">vampire</option>
+        <option value="http://st.pimg.net/tucs/css/sh_vim-dark.min.css">vim-dark</option>
+        <option value="http://st.pimg.net/tucs/css/sh_vim.min.css">vim</option>
+        <option value="http://st.pimg.net/tucs/css/sh_whatis.min.css">whatis</option>
+        <option value="http://st.pimg.net/tucs/css/sh_whitengrey.min.css">whitengrey</option>
+        <option value="http://st.pimg.net/tucs/css/sh_zellner.min.css">zellner</option>
+    </select>
+</div>
+
+
+
+<div class="footer"><div class="cpanstats">88818 Uploads, 26954 Distributions
+117819 Modules, 10442 Uploaders
+</div>
+hosted by <a href="http://www.yellowbot.com/">YellowBot</a><br>
+<a href="http://www.yellowbot.com/"><img alt="do. tag. write. share." src="WriteExcel.pm_files/yellowbot_logo.gif"></a>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="WriteExcel.pm_files/ga.js" type="text/javascript"></script>
+<script type="text/javascript" src="WriteExcel.pm_files/v6test.js"></script>
+
+<script type="text/javascript">
+   // v6.target = '';
+   if (!v6.target) { v6.only_once = true }
+   v6.site = '7A0D89A6-2B82-11DF-B9DA-F61CBD13F020';
+   v6.api_server = 'http://ipv4.v6test.develooper.com';
+   try {
+     v6.test();
+   } catch(err) {}
+</script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("a[href^=http:]").click(function(){
+      var href = $(this).attr('href');
+      var m = href.match('\/\/([^\/:]+)');
+      _gaq.push(['_trackEvent','External',m[1],'Module']);
+    });
+    $("a[href^=/CPAN/]").click(function(){
+      var href = $(this).attr('href');
+      _gaq.push(['_trackEvent','Download',href,'Module']);
+    });
+  });
+</script>
+<!-- Thu Feb 28 03:18:57 2013 GMT (0.164086818695068) @cpansearch1 -->
+ 
+
+</body></html>

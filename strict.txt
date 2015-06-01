@@ -1,0 +1,1 @@
+strict - Perl pragma to restrict unsafe constructs
